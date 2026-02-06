@@ -234,6 +234,26 @@ export const HelpDialog = () => {
           </TableContainer>
         </Box>
 
+        <Divider sx={{ my: 3 }} />
+
+        <Box sx={{ mb: 3, p: 2, border: '1px solid #3c4b64', borderRadius: 2, bgcolor: 'background.paper' }}>
+          <Typography variant="h6" gutterBottom color="primary.main">
+            Recursos Oficiales AWS
+          </Typography>
+          <Typography variant="body2" paragraph>
+            Utilizando iconos oficiales Release 2025.07.31.
+          </Typography>
+          <Button
+            variant="outlined"
+            color="primary"
+            href="https://aws.amazon.com/architecture/icons/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            AWS Architecture Icons
+          </Button>
+        </Box>
+
         <Box sx={{ mt: 3, p: 2, bgcolor: 'info.light', borderRadius: 1 }}>
           <Typography variant="body2" color="info.contrastText">
             <strong>{t('note')}</strong> {t('noteContent')}

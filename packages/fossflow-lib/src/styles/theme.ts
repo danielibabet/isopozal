@@ -32,7 +32,7 @@ export const customVars: CustomThemeVars = {
     height: 40
   },
   customPalette: {
-    diagramBg: '#f6faff',
+    diagramBg: '#161e2d',
     defaultColor: '#a5b8f3'
   }
 };
@@ -83,6 +83,15 @@ export const themeConfig: ThemeOptions = {
     }
   },
   palette: {
+    mode: 'dark',
+    background: {
+      default: '#0f1b2a',
+      paper: '#232f3e'
+    },
+    text: {
+      primary: '#ffffff',
+      secondary: '#d1d5db'
+    },
     secondary: {
       main: '#df004c'
     }
@@ -97,7 +106,7 @@ export const themeConfig: ThemeOptions = {
     MuiToolbar: {
       styleOverrides: {
         root: {
-          backgroundColor: 'white'
+          backgroundColor: '#232f3e'
         }
       }
     },
@@ -122,7 +131,7 @@ export const themeConfig: ThemeOptions = {
     },
     MuiSvgIcon: {
       defaultProps: {
-        color: 'action'
+        color: 'inherit'
       },
       styleOverrides: {
         root: {

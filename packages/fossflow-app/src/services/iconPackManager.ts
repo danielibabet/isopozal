@@ -60,7 +60,7 @@ export const saveEnabledPacks = (packs: IconPackName[]): void => {
 export const loadIconPack = async (packName: IconPackName): Promise<any> => {
   switch (packName) {
     case 'aws':
-      return (await import('@isoflow/isopacks/dist/aws')).default;
+      return (await import('../generatedAwsIcons')).default;
     case 'gcp':
       return (await import('@isoflow/isopacks/dist/gcp')).default;
     case 'azure':
