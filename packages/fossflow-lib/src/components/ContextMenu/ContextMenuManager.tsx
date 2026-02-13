@@ -33,7 +33,7 @@ export const ContextMenuManager = ({ anchorEl }: Props) => {
       onClose={onClose}
       menuItems={[
         {
-          label: 'Add Node',
+          label: 'Añadir Nodo',
           onClick: () => {
             if (!contextMenu) return;
             if (model.icons.length > 0) {
@@ -46,7 +46,7 @@ export const ContextMenuManager = ({ anchorEl }: Props) => {
               scene.placeIcon({
                 modelItem: {
                   id: modelItemId,
-                  name: 'Untitled',
+                  name: 'Sin título',
                   icon: firstIcon.id
                 },
                 viewItem: {
@@ -60,7 +60,7 @@ export const ContextMenuManager = ({ anchorEl }: Props) => {
           }
         },
         {
-          label: 'Add Rectangle',
+          label: 'Añadir Rectángulo',
           onClick: () => {
             if (!contextMenu) return;
             if (model.colors.length > 0) {

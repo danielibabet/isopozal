@@ -69,13 +69,13 @@ export const ToolMenu = () => {
       <Stack direction="row" spacing={0.5} alignItems="center">
         {/* Undo/Redo Section */}
         <IconButton
-          name="Undo (Ctrl+Z)"
+          name="Deshacer (Ctrl+Z)"
           Icon={<UndoIcon />}
           onClick={handleUndo}
           disabled={!canUndo}
         />
         <IconButton
-          name="Redo (Ctrl+Y)"
+          name="Rehacer (Ctrl+Y)"
           Icon={<RedoIcon />}
           onClick={handleRedo}
           disabled={!canRedo}
@@ -83,7 +83,7 @@ export const ToolMenu = () => {
 
         {/* Main Tools */}
         <IconButton
-          name={`Select${hotkeys.select ? ` (${hotkeys.select.toUpperCase()})` : ''}`}
+          name={`Seleccionar${hotkeys.select ? ` (${hotkeys.select.toUpperCase()})` : ''}`}
           Icon={<NearMeIcon />}
           onClick={() => {
             uiStateStoreActions.setMode({
@@ -95,7 +95,7 @@ export const ToolMenu = () => {
           isActive={mode.type === 'CURSOR' || mode.type === 'DRAG_ITEMS'}
         />
         <IconButton
-          name={`Lasso select${hotkeys.lasso ? ` (${hotkeys.lasso.toUpperCase()})` : ''}`}
+          name={`Selección lazo${hotkeys.lasso ? ` (${hotkeys.lasso.toUpperCase()})` : ''}`}
           Icon={<LassoIcon />}
           onClick={() => {
             uiStateStoreActions.setMode({
@@ -108,7 +108,7 @@ export const ToolMenu = () => {
           isActive={mode.type === 'LASSO'}
         />
         <IconButton
-          name={`Freehand lasso${hotkeys.freehandLasso ? ` (${hotkeys.freehandLasso.toUpperCase()})` : ''}`}
+          name={`Lazo mano alzada${hotkeys.freehandLasso ? ` (${hotkeys.freehandLasso.toUpperCase()})` : ''}`}
           Icon={<FreehandLassoIcon />}
           onClick={() => {
             uiStateStoreActions.setMode({
@@ -122,7 +122,7 @@ export const ToolMenu = () => {
           isActive={mode.type === 'FREEHAND_LASSO'}
         />
         <IconButton
-          name={`Pan${hotkeys.pan ? ` (${hotkeys.pan.toUpperCase()})` : ''}`}
+          name={`Desplazar${hotkeys.pan ? ` (${hotkeys.pan.toUpperCase()})` : ''}`}
           Icon={<PanToolIcon />}
           onClick={() => {
             uiStateStoreActions.setMode({
@@ -135,7 +135,7 @@ export const ToolMenu = () => {
           isActive={mode.type === 'PAN'}
         />
         <IconButton
-          name={`Add item${hotkeys.addItem ? ` (${hotkeys.addItem.toUpperCase()})` : ''}`}
+          name={`Añadir elemento${hotkeys.addItem ? ` (${hotkeys.addItem.toUpperCase()})` : ''}`}
           Icon={<AddIcon />}
           onClick={() => {
             uiStateStoreActions.setItemControls({
@@ -150,7 +150,7 @@ export const ToolMenu = () => {
           isActive={mode.type === 'PLACE_ICON'}
         />
         <IconButton
-          name={`Rectangle${hotkeys.rectangle ? ` (${hotkeys.rectangle.toUpperCase()})` : ''}`}
+          name={`Rectángulo${hotkeys.rectangle ? ` (${hotkeys.rectangle.toUpperCase()})` : ''}`}
           Icon={<CropSquareIcon />}
           onClick={() => {
             uiStateStoreActions.setMode({
@@ -162,7 +162,7 @@ export const ToolMenu = () => {
           isActive={mode.type === 'RECTANGLE.DRAW'}
         />
         <IconButton
-          name={`Connector${hotkeys.connector ? ` (${hotkeys.connector.toUpperCase()})` : ''}`}
+          name={`Conector${hotkeys.connector ? ` (${hotkeys.connector.toUpperCase()})` : ''}`}
           Icon={<ConnectorIcon />}
           onClick={() => {
             uiStateStoreActions.setMode({
@@ -174,7 +174,7 @@ export const ToolMenu = () => {
           isActive={mode.type === 'CONNECTOR'}
         />
         <IconButton
-          name={`Text${hotkeys.text ? ` (${hotkeys.text.toUpperCase()})` : ''}`}
+          name={`Texto${hotkeys.text ? ` (${hotkeys.text.toUpperCase()})` : ''}`}
           Icon={<TitleIcon />}
           onClick={createTextBoxProxy}
           isActive={mode.type === 'TEXTBOX'}

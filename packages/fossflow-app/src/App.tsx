@@ -18,7 +18,8 @@ import './App.css';
 import { BrowserRouter, Route, Routes, useParams } from 'react-router-dom';
 
 // Load core isoflow icons (always loaded)
-const coreIcons = flattenCollections([isoflowIsopack]);
+// const coreIcons = flattenCollections([isoflowIsopack]);
+const coreIcons: any[] = [];
 
 interface SavedDiagram {
   id: string;
@@ -46,7 +47,8 @@ function App() {
 
 function EditorPage() {
   // Initialize icon pack manager with core icons
-  const iconPackManager = useIconPackManager(coreIcons);
+  // PASSING EMPTY ARRAY TO REMOVE ISOFLOW ICONS
+  const iconPackManager = useIconPackManager([]);
   const { readonlyDiagramId } = useParams<{ readonlyDiagramId: string }>();
 
   const [diagrams, setDiagrams] = useState<SavedDiagram[]>([]);

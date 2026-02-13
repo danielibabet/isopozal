@@ -1,148 +1,44 @@
-# FossFLOW - Isometric Diagramming Tool <img width="30" height="30" alt="fossflow" src="https://github.com/user-attachments/assets/56d78887-601c-4336-ab87-76f8ee4cde96" />
+# Diagramador de Arquitectura AWS (Edición Española)
 
-<p align="center">
- <a href="README.md">English</a> | <a href="docs/README.cn.md">简体中文</a> | <a href="docs/README.es.md">Español</a> | <a href="docs/README.pt.md">Português</a> | <a href="docs/README.fr.md">Français</a> | <a href="docs/README.hi.md">हिन्दी</a> | <a href="docs/README.bn.md">বাংলা</a> | <a href="docs/README.ru.md">Русский</a> | <a href="docs/README.id.md">Bahasa Indonesia</a> | <a href="docs/README.de.md">Deutsch</a>
-</p>
+> [!NOTE]
+> **Herramienta basada en el proyecto Open Source FossFLOW. Adaptada para la comunidad hispanohablante con recursos oficiales de AWS.**
 
+Una herramienta web gratuita y de código abierto para crear diagramas de arquitectura AWS de manera rápida y sencilla.
 
-<p align="center">
-<a href="https://trendshift.io/repositories/15118" target="_blank"><img src="https://trendshift.io/api/badge/repositories/15118" alt="stan-smith%2FFossFLOW | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-</p>
+![Screenshot](docs/assets/screenshot_demo.png)
 
-<b>Hey!</b> Stan here, if you've used FossFLOW and it's helped you, <b>I'd really appreciate if you could donate something small :)</b> I work full time, and finding the time to work on this project is challenging enough.
-If you've had a feature that I've implemented for you, or fixed a bug it'd be great if you could :) if not, that's not a problem, this software will always remain free!
+## Características Principales
 
+- **Iconos Oficiales AWS**: Incluye el set completo de iconos de arquitectura y recursos de AWS (Versión 2025.07.31).
+- **Categorías en Español**: Los servicios están organizados en categorías traducidas (Cómputo, Base de Datos, Redes, etc.) para facilitar su búsqueda.
+- **Tema Oscuro Profesional**: Interfaz optimizada con una paleta de colores oscuros ("Dark Mode").
+- **Español por Defecto**: La interfaz está completamente en español desde el primer inicio.
+- **Intuitivo**: Dibuja flujos isométricos rápidamente.
+- **Privado**: Todo el procesamiento se realiza en el navegador. No se envían datos a ningún servidor.
 
-<b>Also!</b> If you haven't yet, please check out the underlying library this is built on by <a href="https://github.com/markmanx/isoflow">@markmanx</a> I truly stand on the shoulders of a giant here 🫡
+## Inicio Rápido
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P61KBXA3)
+Para ejecutar este proyecto en tu máquina local:
 
-<a href="https://www.buymeacoffee.com/stan.smith" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+1. **Instalar dependencias**:
+   ```bash
+   npm install
+   ```
+   > Nota: Si estás en Windows y encuentras problemas con scripts, asegúrate de tener una terminal compatible con bash o usa Git Bash.
 
-Thanks,
+2. **Iniciar la aplicación**:
+   ```bash
+   npm run dev
+   ```
+   Esto ejecutará la aplicación en modo desarrollo. Abre [http://localhost:3000](http://localhost:3000) para verla en tu navegador.
 
--Stan
+## Glosario de Servicios
 
-## Try it online
-<p align="center">
-Go to  <b> --> https://stan-smith.github.io/FossFLOW/ <-- </b>
-</p>
-<p align="center">
+¿Eres nuevo en AWS o necesitas recordar qué hace un servicio?
+Consulta nuestro [Glosario de Servicios AWS](GLOSARIO_AWS.md) para ver descripciones rápidas de los componentes más comunes.
 
- <a href="https://github.com/stan-smith/SlingShot">
-  Check out my latest project: <b>SlingShot</b> - Dead easy video streaming over QUIC
- </a>
-</p>
+## Créditos
 
-------------------------------------------------------------------------------------------------------------------------------
-FossFLOW is a powerful, open-source Progressive Web App (PWA) for creating beautiful isometric diagrams. Built with React and the <a href="https://github.com/markmanx/isoflow">Isoflow</a> (Now forked and published to NPM as fossflow) library, it runs entirely in your browser with offline support.
+Este proyecto es un fork personalizado de [FossFLOW](https://github.com/fossflow/fossflow). Agradecemos a los creadores originales por su excelente trabajo base.
 
-![Screenshot_20250630_160954](https://github.com/user-attachments/assets/e7f254ad-625f-4b8a-8efc-5293b5be9d55)
-
-- **🤝 [CONTRIBUTING.md](https://github.com/stan-smith/FossFLOW/blob/master/CONTRIBUTING.md)** - How to contribute to the project.
-
-## 🐳 Quick Deploy with Docker
-
-```bash
-# Using Docker Compose (recommended - includes persistent storage)
-docker compose up
-
-# Or run directly from Docker Hub with persistent storage
-docker run -p 80:80 -v $(pwd)/diagrams:/data/diagrams stnsmith/fossflow:latest
-```
-
-Server storage is enabled by default in Docker. Your diagrams will be saved to `./diagrams` on the host.
-
-To disable server storage, set `ENABLE_SERVER_STORAGE=false`:
-```bash
-docker run -p 80:80 -e ENABLE_SERVER_STORAGE=false stnsmith/fossflow:latest
-```
-
-## Quick Start (Local Development)
-
-```bash
-# Clone the repository
-git clone https://github.com/stan-smith/FossFLOW
-cd FossFLOW
-
-# Install dependencies
-npm install
-
-# Build the library (required first time)
-npm run build:lib
-
-# Start development server
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Monorepo Structure
-
-This is a monorepo containing two packages:
-
-- `packages/fossflow-lib` - React component library for drawing network diagrams (built with Webpack)
-- `packages/fossflow-app` - Progressive Web App which wraps the lib and presents it (built with RSBuild)
-
-### Development Commands
-
-```bash
-# Development
-npm run dev          # Start app development server
-npm run dev:lib      # Watch mode for library development
-
-# Building
-npm run build        # Build both library and app
-npm run build:lib    # Build library only
-npm run build:app    # Build app only
-
-# Testing & Linting
-npm test             # Run unit tests
-npm run lint         # Check for linting errors
-
-# E2E Tests (Selenium)
-cd e2e-tests
-./run-tests.sh       # Run end-to-end tests (requires Docker & Python)
-
-# Publishing
-npm run publish:lib  # Publish library to npm
-```
-
-## How to Use
-
-### Creating Diagrams
-
-1. **Add Items**:
-   - Press the "+" button on the top right menu, the library of components will appear on the left
-   - Drag and drop components from the library onto the canvas
-   - Or right-click on the grid and select "Add node"
-
-2. **Connect Items**: 
-   - Select the Connector tool (press 'C' or click connector icon)
-   - **Click mode** (default): Click first node, then click second node
-   - **Drag mode** (optional): Click and drag from first to second node
-   - Switch modes in Settings → Connectors tab
-
-3. **Save Your Work**:
-   - **Quick Save** - Saves to browser session
-   - **Export** - Download as JSON file
-   - **Import** - Load from JSON file
-
-### Storage Options
-
-- **Session Storage**: Temporary saves cleared when browser closes
-- **Export/Import**: Permanent storage as JSON files
-- **Auto-Save**: Automatically saves changes every 5 seconds to session
-
-## Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-## Documentation
-
-- [FOSSFLOW_ENCYCLOPEDIA.md](FOSSFLOW_ENCYCLOPEDIA.md) - Comprehensive guide to the codebase
-- [CONTRIBUTING.md](CONTRIBUTING.md) - Contributing guidelines
-
-## License
-
-MIT
+Los iconos de AWS son propiedad de Amazon Web Services.

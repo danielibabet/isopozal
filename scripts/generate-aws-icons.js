@@ -1,92 +1,133 @@
 const fs = require('fs');
 const path = require('path');
 
-const ASSET_PACKAGE_DIR = path.join(__dirname, '../Asset-Package/Architecture-Service-Icons_07312025');
+// Configuration
+const SVG_ROOT = path.join(__dirname, '../svg');
 const OUTPUT_FILE = path.join(__dirname, '../packages/fossflow-app/src/generatedAwsIcons.ts');
 
-function getAllFiles(dirPath, arrayOfFiles) {
-  const files = fs.readdirSync(dirPath);
-
-  arrayOfFiles = arrayOfFiles || [];
-
-  files.forEach(function(file) {
-    if (fs.statSync(dirPath + '/' + file).isDirectory()) {
-      arrayOfFiles = getAllFiles(dirPath + '/' + file, arrayOfFiles);
-    } else {
-      arrayOfFiles.push(path.join(dirPath, '/', file));
-    }
-  });
-
-  return arrayOfFiles;
-}
-
-function generateIcons() {
-  console.log(`Scanning ${ASSET_PACKAGE_DIR}...`);
+// Helper to convert string to PascalCase/Title Case for readable names
+const formatTitle = (filename) => {
+  // Remove extension and common prefixes/suffixes
+  let name = filename.replace('.svg', '')
+    .replace(/^Arch_/, '')
+    .replace(/^Res_/, '')
+    .replace(/_48$/, '');
   
-  if (!fs.existsSync(ASSET_PACKAGE_DIR)) {
-    console.error(`Directory not found: ${ASSET_PACKAGE_DIR}`);
+  // Replace hyphens/underscores with spaces
+  name = name.replace(/[-_]/g, ' ');
+  
+  return name;
+};
+
+// Map of folder names to Spanish category names (optional, extend as needed)
+// If a category isn't listed, it defaults to the English folder name
+const CATEGORY_MAP = {
+  'Analytics': 'Analítica',
+  'App-Integration': 'Integración de Aplicaciones',
+  'Blockchain': 'Blockchain',
+  'Business-Applications': 'Aplicaciones de Negocio',
+  'Cloud-Financial-Management': 'Gestión Financiera',
+  'Compute': 'Cómputo',
+  'Containers': 'Contenedores',
+  'Customer-Enablement': 'Habilitación del Cliente',
+  'Database': 'Base de Datos',
+  'Developer-Tools': 'Herramientas de Desarrollador',
+  'End-User-Computing': 'Computación de Usuario Final',
+  'Front-End-Web-Mobile': 'Front-End y Móvil',
+  'Games': 'Juegos',
+  'General-Icons': 'General',
+  'Internet-of-Things': 'Internet de las Cosas (IoT)',
+  'Machine-Learning': 'Machine Learning',
+  'Management-Governance': 'Gestión y Gobierno',
+  'Media-Services': 'Servicios Multimedia',
+  'Migration-Transfer': 'Migración y Transferencia',
+  'Networking-Content-Delivery': 'Redes y Entrega de Contenido',
+  'Quantum-Technologies': 'Tecnologías Cuánticas',
+  'Robotics': 'Robótica',
+  'Satellite': 'Satélite',
+  'Security-Identity-Compliance': 'Seguridad e Identidad',
+  'Storage': 'Almacenamiento',
+  'VR-AR': 'VR / AR'
+};
+
+const generate = () => {
+  console.log('Scanning for SVG icons...');
+  
+  if (!fs.existsSync(SVG_ROOT)) {
+    console.error(`Error: SVG root directory not found at ${SVG_ROOT}`);
     process.exit(1);
   }
 
-  const allFiles = getAllFiles(ASSET_PACKAGE_DIR);
-  
-  // Filter for SVGs in "48" folders
-  const iconFiles = allFiles.filter(file => {
-    return file.endsWith('.svg') && (file.includes(path.sep + '48' + path.sep) || file.includes('/48/'));
-  });
+  const icons = [];
+  const categories = fs.readdirSync(SVG_ROOT, { withFileTypes: true });
 
-  console.log(`Found ${iconFiles.length} icons.`);
+  for (const dirent of categories) {
+    if (!dirent.isDirectory()) continue;
 
-  const icons = iconFiles.map(filePath => {
-    const filename = path.basename(filePath, '.svg');
-    // Example filename: Arch_AWS-Lambda_48.svg
-    // Title: AWS Lambda
+    const categoryName = dirent.name;
+    const categoryPath = path.join(SVG_ROOT, categoryName);
+    const displayCategory = CATEGORY_MAP[categoryName] || categoryName;
+
+    // Find all SVGs in this category, recursively if needed, 
+    // but the request said "subfolders called 48" or flat structure.
+    // Let's look for SVG files directly or in common subfolders.
     
-    // Remove "Arch_" prefix if present
-    let title = filename.replace(/^Arch_/, '');
-    // Remove "_48" suffix if present
-    title = title.replace(/_48$/, '');
-    // Replace hyphens/underscores with spaces
-    title = title.replace(/[-_]/g, ' ');
-    
-    // Category from parent folder (grandparent of file usually, since parent is "48")
-    // .../CategoryName/48/icon.svg
-    const parts = filePath.split(path.sep);
-    const parentDir = parts[parts.length - 2]; // "48"
-    let category = 'AWS'; // Default
-    
-    if (parentDir === '48') {
-      let catDir = parts[parts.length - 3];
-      // Clean up category name (e.g. "Arch_Compute" -> "Compute")
-      catDir = catDir.replace(/^Arch_/, '');
-      category = catDir;
+    // We'll walk the directory to find .svg files
+    const walk = (dir) => {
+        let results = [];
+        const list = fs.readdirSync(dir);
+        list.forEach((file) => {
+            file = path.join(dir, file);
+            const stat = fs.statSync(file);
+            if (stat && stat.isDirectory()) {
+                results = results.concat(walk(file));
+            } else {
+                if (file.endsWith('.svg')) {
+                    results.push(file);
+                }
+            }
+        });
+        return results;
     }
 
-    const svgContent = fs.readFileSync(filePath, 'utf8');
+    const svgFiles = walk(categoryPath);
 
-    return {
-      id: filename,
-      name: title,
-      title: title,
-      category: category,
-      collection: 'aws',
-      url: '', // Not used if svg content is provided
-      svg: svgContent
-    };
-  });
+    for (const filePath of svgFiles) {
+      const fileName = path.basename(filePath);
+      const svgContent = fs.readFileSync(filePath, 'utf8');
+      
+      // Use the filename as a unique ID basis, but sanitize it slightly to be a valid identifier if needed
+      // ensuring uniqueness is key. 
+      const id = fileName.replace('.svg', ''); 
+      
+      const title = formatTitle(fileName);
 
-  const outputContent = `// Auto-generated by scripts/generate-aws-icons.js
+      icons.push({
+        id: id,
+        title: title,
+        category: displayCategory,
+        // Use the display category as the collection name to enable grouping in the UI
+        collection: displayCategory, 
+        url: '', // We embed the SVG content directly
+        svg: svgContent
+      });
+    }
+  }
+
+  console.log(`Found ${icons.length} icons. Generating output...`);
+
+  const fileContent = `// Auto-generated by scripts/generate-aws-icons.js
 export const generatedAwsIcons = {
   name: 'aws',
-  title: 'AWS Official Icons',
+  title: 'AWS Official Icons (ES)',
   icons: ${JSON.stringify(icons, null, 2)}
 };
 
 export default generatedAwsIcons;
 `;
 
-  fs.writeFileSync(OUTPUT_FILE, outputContent);
-  console.log(`Generated ${OUTPUT_FILE} with ${icons.length} icons.`);
-}
+  fs.writeFileSync(OUTPUT_FILE, fileContent);
+  console.log(`Successfully generated ${OUTPUT_FILE}`);
+};
 
-generateIcons();
+generate();

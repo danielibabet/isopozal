@@ -16,7 +16,7 @@ import {
   Box,
   Divider
 } from '@mui/material';
-import { Close as CloseIcon } from '@mui/icons-material';
+import { Close as CloseIcon, Launch as LaunchIcon } from '@mui/icons-material';
 import { useUiStateStore } from 'src/stores/uiStateStore';
 import { DialogTypeEnum } from 'src/types/ui';
 import { useTranslation } from 'src/stores/localeStore';
@@ -246,6 +246,7 @@ export const HelpDialog = () => {
           <Button
             variant="outlined"
             color="primary"
+            startIcon={<LaunchIcon />}
             href="https://aws.amazon.com/architecture/icons/"
             target="_blank"
             rel="noopener noreferrer"

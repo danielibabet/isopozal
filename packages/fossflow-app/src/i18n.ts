@@ -13,6 +13,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'es-ES',
+    lng: 'es-ES', // Force Spanish on init
     debug: process.env.NODE_ENV === 'development',
     interpolation: {
       escapeValue: false
@@ -22,7 +23,7 @@ i18n
       loadPath: `${basePath}i18n/{{ns}}/{{lng}}.json`
     },
     detection: {
-      order: ['localStorage'],
+      order: ['localStorage', 'navigator'],
       caches: ['localStorage']
     }
   });

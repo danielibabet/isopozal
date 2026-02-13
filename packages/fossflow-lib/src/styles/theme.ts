@@ -32,8 +32,8 @@ export const customVars: CustomThemeVars = {
     height: 40
   },
   customPalette: {
-    diagramBg: '#161e2d',
-    defaultColor: '#a5b8f3'
+    diagramBg: '#161e2d', // AWS Canvas Dark
+    defaultColor: '#ffffff'
   }
 };
 
@@ -64,14 +64,25 @@ export const themeConfig: ThemeOptions = {
     }
   },
   typography: {
+    fontFamily: [
+      '"Amazon Ember"',
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif'
+    ].join(','),
     h2: {
       fontSize: '4em',
-      fontStyle: 'bold',
+      fontWeight: 700,
       lineHeight: 1.2
     },
     h5: {
       fontSize: '1.3em',
-      lineHeight: 1.2
+      lineHeight: 1.2,
+      fontWeight: 600
     },
     body1: {
       fontSize: '0.85em',
@@ -85,16 +96,20 @@ export const themeConfig: ThemeOptions = {
   palette: {
     mode: 'dark',
     background: {
-      default: '#0f1b2a',
-      paper: '#232f3e'
+      default: '#0f1b2a', // AWS Global Background
+      paper: '#232f3e'    // AWS Panel/Top Bar
     },
     text: {
       primary: '#ffffff',
       secondary: '#d1d5db'
     },
+    primary: {
+      main: '#FF9900' // AWS Orange
+    },
     secondary: {
-      main: '#df004c'
-    }
+      main: '#FF9900'
+    },
+    divider: '#3b4b5c'
   },
   components: {
     MuiCard: {
@@ -106,7 +121,8 @@ export const themeConfig: ThemeOptions = {
     MuiToolbar: {
       styleOverrides: {
         root: {
-          backgroundColor: '#232f3e'
+          backgroundColor: '#232f3e',
+          color: '#ffffff'
         }
       }
     },
@@ -125,7 +141,8 @@ export const themeConfig: ThemeOptions = {
       },
       styleOverrides: {
         root: {
-          textTransform: 'none'
+          textTransform: 'none',
+          fontWeight: 600
         }
       }
     },
@@ -135,8 +152,8 @@ export const themeConfig: ThemeOptions = {
       },
       styleOverrides: {
         root: {
-          width: 17,
-          height: 17
+          width: 20,
+          height: 20
         }
       }
     },
@@ -146,7 +163,25 @@ export const themeConfig: ThemeOptions = {
       },
       styleOverrides: {
         root: {
-          '.MuiInputBase-input': {}
+          '& .MuiOutlinedInput-root': {
+            backgroundColor: '#161e2d',
+            '& fieldset': {
+              borderColor: '#414750'
+            },
+            '&:hover fieldset': {
+              borderColor: '#949494'
+            },
+            '&.Mui-focused fieldset': {
+              borderColor: '#FF9900'
+            }
+          }
+        }
+      }
+    },
+    MuiInputBase: {
+      styleOverrides: {
+        root: {
+          color: '#ffffff'
         }
       }
     }
