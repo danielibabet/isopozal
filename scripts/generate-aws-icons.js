@@ -104,6 +104,7 @@ const generate = () => {
 
       icons.push({
         id: id,
+        name: title,
         title: title,
         category: displayCategory,
         // Use the display category as the collection name to enable grouping in the UI

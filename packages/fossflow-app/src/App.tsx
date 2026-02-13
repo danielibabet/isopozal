@@ -766,7 +766,7 @@ function EditorPage() {
             {t('dialog.readOnly.mode')}
           </div>
         )}
-        <ChangeLanguage />
+        {/* <ChangeLanguage /> - Removed to enforce Spanish */}
         <span className="current-diagram">
           {isReadonlyUrl ? (
             <span>

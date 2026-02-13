@@ -9,11 +9,11 @@ const basePath = publicUrl ? (publicUrl.endsWith('/') ? publicUrl : publicUrl + 
 
 i18n
   .use(Backend)
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    lng: 'es-ES',
     fallbackLng: 'es-ES',
-    lng: 'es-ES', // Force Spanish on init
+    supportedLngs: ['es-ES'], // Elimina los demás
     debug: process.env.NODE_ENV === 'development',
     interpolation: {
       escapeValue: false
@@ -22,10 +22,7 @@ i18n
     backend: {
       loadPath: `${basePath}i18n/{{ns}}/{{lng}}.json`
     },
-    detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage']
-    }
+    // Removed detection config
   });
 
 export const supportedLanguages = [

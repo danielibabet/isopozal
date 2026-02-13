@@ -5,6 +5,7 @@ export const generatedAwsIcons = {
   icons: [
   {
     "id": "Athena",
+    "name": "Athena",
     "title": "Athena",
     "category": "Analítica",
     "collection": "Analítica",
@@ -13,6 +14,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Clean-Rooms",
+    "name": "Clean Rooms",
     "title": "Clean Rooms",
     "category": "Analítica",
     "collection": "Analítica",
@@ -21,6 +23,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "CloudSearch",
+    "name": "CloudSearch",
     "title": "CloudSearch",
     "category": "Analítica",
     "collection": "Analítica",
@@ -29,6 +32,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Data-Exchange",
+    "name": "Data Exchange",
     "title": "Data Exchange",
     "category": "Analítica",
     "collection": "Analítica",
@@ -37,6 +41,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Data-Pipeline",
+    "name": "Data Pipeline",
     "title": "Data Pipeline",
     "category": "Analítica",
     "collection": "Analítica",
@@ -45,6 +50,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "DataZone",
+    "name": "DataZone",
     "title": "DataZone",
     "category": "Analítica",
     "collection": "Analítica",
@@ -53,6 +59,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "EMR",
+    "name": "EMR",
     "title": "EMR",
     "category": "Analítica",
     "collection": "Analítica",
@@ -61,6 +68,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "FinSpace",
+    "name": "FinSpace",
     "title": "FinSpace",
     "category": "Analítica",
     "collection": "Analítica",
@@ -69,6 +77,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Glue-DataBrew",
+    "name": "Glue DataBrew",
     "title": "Glue DataBrew",
     "category": "Analítica",
     "collection": "Analítica",
@@ -77,6 +86,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Glue-Elastic-Views",
+    "name": "Glue Elastic Views",
     "title": "Glue Elastic Views",
     "category": "Analítica",
     "collection": "Analítica",
@@ -85,6 +95,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Glue",
+    "name": "Glue",
     "title": "Glue",
     "category": "Analítica",
     "collection": "Analítica",
@@ -93,6 +104,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Kinesis-Data-Analytics",
+    "name": "Kinesis Data Analytics",
     "title": "Kinesis Data Analytics",
     "category": "Analítica",
     "collection": "Analítica",
@@ -101,6 +113,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Kinesis-Data-Streams",
+    "name": "Kinesis Data Streams",
     "title": "Kinesis Data Streams",
     "category": "Analítica",
     "collection": "Analítica",
@@ -109,6 +122,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Kinesis-Firehose",
+    "name": "Kinesis Firehose",
     "title": "Kinesis Firehose",
     "category": "Analítica",
     "collection": "Analítica",
@@ -117,6 +131,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Kinesis-Video-Streams",
+    "name": "Kinesis Video Streams",
     "title": "Kinesis Video Streams",
     "category": "Analítica",
     "collection": "Analítica",
@@ -125,6 +140,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Kinesis",
+    "name": "Kinesis",
     "title": "Kinesis",
     "category": "Analítica",
     "collection": "Analítica",
@@ -133,6 +149,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Lake-Formation",
+    "name": "Lake Formation",
     "title": "Lake Formation",
     "category": "Analítica",
     "collection": "Analítica",
@@ -141,6 +158,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Managed-Streaming-for-Apache-Kafka",
+    "name": "Managed Streaming for Apache Kafka",
     "title": "Managed Streaming for Apache Kafka",
     "category": "Analítica",
     "collection": "Analítica",
@@ -149,6 +167,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "OpenSearch-Service",
+    "name": "OpenSearch Service",
     "title": "OpenSearch Service",
     "category": "Analítica",
     "collection": "Analítica",
@@ -157,6 +176,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "QuickSight",
+    "name": "QuickSight",
     "title": "QuickSight",
     "category": "Analítica",
     "collection": "Analítica",
@@ -165,6 +185,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Redshift",
+    "name": "Redshift",
     "title": "Redshift",
     "category": "Analítica",
     "collection": "Analítica",
@@ -173,6 +194,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "API-Gateway",
+    "name": "API Gateway",
     "title": "API Gateway",
     "category": "Integración de Aplicaciones",
     "collection": "Integración de Aplicaciones",
@@ -181,6 +203,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "AppFlow",
+    "name": "AppFlow",
     "title": "AppFlow",
     "category": "Integración de Aplicaciones",
     "collection": "Integración de Aplicaciones",
@@ -189,6 +212,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "AppSync",
+    "name": "AppSync",
     "title": "AppSync",
     "category": "Integración de Aplicaciones",
     "collection": "Integración de Aplicaciones",
@@ -197,6 +221,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Console-Mobile-Application",
+    "name": "Console Mobile Application",
     "title": "Console Mobile Application",
     "category": "Integración de Aplicaciones",
     "collection": "Integración de Aplicaciones",
@@ -205,6 +230,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "EventBridge",
+    "name": "EventBridge",
     "title": "EventBridge",
     "category": "Integración de Aplicaciones",
     "collection": "Integración de Aplicaciones",
@@ -213,6 +239,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Express-Workflows",
+    "name": "Express Workflows",
     "title": "Express Workflows",
     "category": "Integración de Aplicaciones",
     "collection": "Integración de Aplicaciones",
@@ -221,6 +248,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Managed-Workflows-for-Apache-Airflow",
+    "name": "Managed Workflows for Apache Airflow",
     "title": "Managed Workflows for Apache Airflow",
     "category": "Integración de Aplicaciones",
     "collection": "Integración de Aplicaciones",
@@ -229,6 +257,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "MQ",
+    "name": "MQ",
     "title": "MQ",
     "category": "Integración de Aplicaciones",
     "collection": "Integración de Aplicaciones",
@@ -237,6 +266,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Simple-Notification-Service",
+    "name": "Simple Notification Service",
     "title": "Simple Notification Service",
     "category": "Integración de Aplicaciones",
     "collection": "Integración de Aplicaciones",
@@ -245,6 +275,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Simple-Queue-Service",
+    "name": "Simple Queue Service",
     "title": "Simple Queue Service",
     "category": "Integración de Aplicaciones",
     "collection": "Integración de Aplicaciones",
@@ -253,6 +284,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Step-Functions",
+    "name": "Step Functions",
     "title": "Step Functions",
     "category": "Integración de Aplicaciones",
     "collection": "Integración de Aplicaciones",
@@ -261,6 +293,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Managed-Blockchain",
+    "name": "Managed Blockchain",
     "title": "Managed Blockchain",
     "category": "Blockchain",
     "collection": "Blockchain",
@@ -269,6 +302,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Quantum-Ledger-Database",
+    "name": "Quantum Ledger Database",
     "title": "Quantum Ledger Database",
     "category": "Blockchain",
     "collection": "Blockchain",
@@ -277,6 +311,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Alexa-For-Business",
+    "name": "Alexa For Business",
     "title": "Alexa For Business",
     "category": "Aplicaciones de Negocio",
     "collection": "Aplicaciones de Negocio",
@@ -285,6 +320,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Chime-SDK",
+    "name": "Chime SDK",
     "title": "Chime SDK",
     "category": "Aplicaciones de Negocio",
     "collection": "Aplicaciones de Negocio",
@@ -293,6 +329,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Chime-Voice-Connector",
+    "name": "Chime Voice Connector",
     "title": "Chime Voice Connector",
     "category": "Aplicaciones de Negocio",
     "collection": "Aplicaciones de Negocio",
@@ -301,6 +338,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Chime",
+    "name": "Chime",
     "title": "Chime",
     "category": "Aplicaciones de Negocio",
     "collection": "Aplicaciones de Negocio",
@@ -309,6 +347,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Connect",
+    "name": "Connect",
     "title": "Connect",
     "category": "Aplicaciones de Negocio",
     "collection": "Aplicaciones de Negocio",
@@ -317,6 +356,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Honeycode",
+    "name": "Honeycode",
     "title": "Honeycode",
     "category": "Aplicaciones de Negocio",
     "collection": "Aplicaciones de Negocio",
@@ -325,6 +365,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Pinpoint-APIs",
+    "name": "Pinpoint APIs",
     "title": "Pinpoint APIs",
     "category": "Aplicaciones de Negocio",
     "collection": "Aplicaciones de Negocio",
@@ -333,6 +374,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Pinpoint",
+    "name": "Pinpoint",
     "title": "Pinpoint",
     "category": "Aplicaciones de Negocio",
     "collection": "Aplicaciones de Negocio",
@@ -341,6 +383,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Simple-Email-Service",
+    "name": "Simple Email Service",
     "title": "Simple Email Service",
     "category": "Aplicaciones de Negocio",
     "collection": "Aplicaciones de Negocio",
@@ -349,6 +392,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Supply-Chain",
+    "name": "Supply Chain",
     "title": "Supply Chain",
     "category": "Aplicaciones de Negocio",
     "collection": "Aplicaciones de Negocio",
@@ -357,6 +401,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Wickr",
+    "name": "Wickr",
     "title": "Wickr",
     "category": "Aplicaciones de Negocio",
     "collection": "Aplicaciones de Negocio",
@@ -365,6 +410,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "WorkDocs-SDK",
+    "name": "WorkDocs SDK",
     "title": "WorkDocs SDK",
     "category": "Aplicaciones de Negocio",
     "collection": "Aplicaciones de Negocio",
@@ -373,6 +419,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "WorkDocs",
+    "name": "WorkDocs",
     "title": "WorkDocs",
     "category": "Aplicaciones de Negocio",
     "collection": "Aplicaciones de Negocio",
@@ -381,6 +428,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "WorkMail",
+    "name": "WorkMail",
     "title": "WorkMail",
     "category": "Aplicaciones de Negocio",
     "collection": "Aplicaciones de Negocio",
@@ -389,6 +437,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Application-Cost-Profiler",
+    "name": "Application Cost Profiler",
     "title": "Application Cost Profiler",
     "category": "Gestión Financiera",
     "collection": "Gestión Financiera",
@@ -397,6 +446,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Billing-Conductor",
+    "name": "Billing Conductor",
     "title": "Billing Conductor",
     "category": "Gestión Financiera",
     "collection": "Gestión Financiera",
@@ -405,6 +455,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Budgets",
+    "name": "Budgets",
     "title": "Budgets",
     "category": "Gestión Financiera",
     "collection": "Gestión Financiera",
@@ -413,6 +464,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Cost-and-Usage-Report",
+    "name": "Cost and Usage Report",
     "title": "Cost and Usage Report",
     "category": "Gestión Financiera",
     "collection": "Gestión Financiera",
@@ -421,6 +473,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Cost-Explorer",
+    "name": "Cost Explorer",
     "title": "Cost Explorer",
     "category": "Gestión Financiera",
     "collection": "Gestión Financiera",
@@ -429,6 +482,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Reserved-Instance-Reporting",
+    "name": "Reserved Instance Reporting",
     "title": "Reserved Instance Reporting",
     "category": "Gestión Financiera",
     "collection": "Gestión Financiera",
@@ -437,6 +491,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Savings-Plans",
+    "name": "Savings Plans",
     "title": "Savings Plans",
     "category": "Gestión Financiera",
     "collection": "Gestión Financiera",
@@ -445,6 +500,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "App-Runner",
+    "name": "App Runner",
     "title": "App Runner",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -453,6 +509,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Application-Auto-Scaling",
+    "name": "Application Auto Scaling",
     "title": "Application Auto Scaling",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -461,6 +518,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Batch",
+    "name": "Batch",
     "title": "Batch",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -469,6 +527,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Bottlerocket",
+    "name": "Bottlerocket",
     "title": "Bottlerocket",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -477,6 +536,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Compute-Optimizer",
+    "name": "Compute Optimizer",
     "title": "Compute Optimizer",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -485,6 +545,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "EC2-Auto-Scaling",
+    "name": "EC2 Auto Scaling",
     "title": "EC2 Auto Scaling",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -493,6 +554,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "EC2-Image-Builder",
+    "name": "EC2 Image Builder",
     "title": "EC2 Image Builder",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -501,6 +563,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "EC2",
+    "name": "EC2",
     "title": "EC2",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -509,6 +572,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elastic-Beanstalk",
+    "name": "Elastic Beanstalk",
     "title": "Elastic Beanstalk",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -517,6 +581,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elastic-Fabric-Adapter",
+    "name": "Elastic Fabric Adapter",
     "title": "Elastic Fabric Adapter",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -525,6 +590,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Fargate",
+    "name": "Fargate",
     "title": "Fargate",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -533,6 +599,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Genomics-CLI",
+    "name": "Genomics CLI",
     "title": "Genomics CLI",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -541,6 +608,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Lambda",
+    "name": "Lambda",
     "title": "Lambda",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -549,6 +617,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Lightsail",
+    "name": "Lightsail",
     "title": "Lightsail",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -557,6 +626,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Local-Zones",
+    "name": "Local Zones",
     "title": "Local Zones",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -565,6 +635,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "NICE-DCV",
+    "name": "NICE DCV",
     "title": "NICE DCV",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -573,6 +644,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "NICE-EnginFrame",
+    "name": "NICE EnginFrame",
     "title": "NICE EnginFrame",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -581,6 +653,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Nitro-Enclaves",
+    "name": "Nitro Enclaves",
     "title": "Nitro Enclaves",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -589,6 +662,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Outposts-family",
+    "name": "Outposts family",
     "title": "Outposts family",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -597,6 +671,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Outposts-rack",
+    "name": "Outposts rack",
     "title": "Outposts rack",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -605,6 +680,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Outposts-servers",
+    "name": "Outposts servers",
     "title": "Outposts servers",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -613,6 +689,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "ParallelCluster",
+    "name": "ParallelCluster",
     "title": "ParallelCluster",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -621,6 +698,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Serverless-Application-Repository",
+    "name": "Serverless Application Repository",
     "title": "Serverless Application Repository",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -629,6 +707,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "SimSpace-Weaver",
+    "name": "SimSpace Weaver",
     "title": "SimSpace Weaver",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -637,6 +716,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Thinkbox-Deadline",
+    "name": "Thinkbox Deadline",
     "title": "Thinkbox Deadline",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -645,6 +725,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Thinkbox-Frost",
+    "name": "Thinkbox Frost",
     "title": "Thinkbox Frost",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -653,6 +734,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Thinkbox-Krakatoa",
+    "name": "Thinkbox Krakatoa",
     "title": "Thinkbox Krakatoa",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -661,6 +743,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Thinkbox-Sequoia",
+    "name": "Thinkbox Sequoia",
     "title": "Thinkbox Sequoia",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -669,6 +752,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Thinkbox-Stoke",
+    "name": "Thinkbox Stoke",
     "title": "Thinkbox Stoke",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -677,6 +761,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Thinkbox-XMesh",
+    "name": "Thinkbox XMesh",
     "title": "Thinkbox XMesh",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -685,6 +770,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "VMware-Cloud-on-AWS",
+    "name": "VMware Cloud on AWS",
     "title": "VMware Cloud on AWS",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -693,6 +779,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Wavelength",
+    "name": "Wavelength",
     "title": "Wavelength",
     "category": "Cómputo",
     "collection": "Cómputo",
@@ -701,6 +788,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "ECS-Anywhere",
+    "name": "ECS Anywhere",
     "title": "ECS Anywhere",
     "category": "Contenedores",
     "collection": "Contenedores",
@@ -709,6 +797,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "EKS-Anywhere",
+    "name": "EKS Anywhere",
     "title": "EKS Anywhere",
     "category": "Contenedores",
     "collection": "Contenedores",
@@ -717,6 +806,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "EKS-Cloud",
+    "name": "EKS Cloud",
     "title": "EKS Cloud",
     "category": "Contenedores",
     "collection": "Contenedores",
@@ -725,6 +815,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "EKS-Distro",
+    "name": "EKS Distro",
     "title": "EKS Distro",
     "category": "Contenedores",
     "collection": "Contenedores",
@@ -733,6 +824,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elastic-Container-Registry",
+    "name": "Elastic Container Registry",
     "title": "Elastic Container Registry",
     "category": "Contenedores",
     "collection": "Contenedores",
@@ -741,6 +833,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elastic-Container-Service",
+    "name": "Elastic Container Service",
     "title": "Elastic Container Service",
     "category": "Contenedores",
     "collection": "Contenedores",
@@ -749,6 +842,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elastic-Kubernetes-Service",
+    "name": "Elastic Kubernetes Service",
     "title": "Elastic Kubernetes Service",
     "category": "Contenedores",
     "collection": "Contenedores",
@@ -757,6 +851,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Fargate",
+    "name": "Fargate",
     "title": "Fargate",
     "category": "Contenedores",
     "collection": "Contenedores",
@@ -765,6 +860,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Red-Hat-OpenShift-Service-on-AWS",
+    "name": "Red Hat OpenShift Service on AWS",
     "title": "Red Hat OpenShift Service on AWS",
     "category": "Contenedores",
     "collection": "Contenedores",
@@ -773,6 +869,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Activate",
+    "name": "Activate",
     "title": "Activate",
     "category": "Habilitación del Cliente",
     "collection": "Habilitación del Cliente",
@@ -781,6 +878,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IQ",
+    "name": "IQ",
     "title": "IQ",
     "category": "Habilitación del Cliente",
     "collection": "Habilitación del Cliente",
@@ -789,6 +887,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Managed-Services",
+    "name": "Managed Services",
     "title": "Managed Services",
     "category": "Habilitación del Cliente",
     "collection": "Habilitación del Cliente",
@@ -797,6 +896,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Professional-Services",
+    "name": "Professional Services",
     "title": "Professional Services",
     "category": "Habilitación del Cliente",
     "collection": "Habilitación del Cliente",
@@ -805,6 +905,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "rePost",
+    "name": "rePost",
     "title": "rePost",
     "category": "Habilitación del Cliente",
     "collection": "Habilitación del Cliente",
@@ -813,6 +914,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Support",
+    "name": "Support",
     "title": "Support",
     "category": "Habilitación del Cliente",
     "collection": "Habilitación del Cliente",
@@ -821,6 +923,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Training-Certification",
+    "name": "Training Certification",
     "title": "Training Certification",
     "category": "Habilitación del Cliente",
     "collection": "Habilitación del Cliente",
@@ -829,6 +932,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Aurora",
+    "name": "Aurora",
     "title": "Aurora",
     "category": "Base de Datos",
     "collection": "Base de Datos",
@@ -837,6 +941,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Database-Migration-Service",
+    "name": "Database Migration Service",
     "title": "Database Migration Service",
     "category": "Base de Datos",
     "collection": "Base de Datos",
@@ -845,6 +950,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "DocumentDB",
+    "name": "DocumentDB",
     "title": "DocumentDB",
     "category": "Base de Datos",
     "collection": "Base de Datos",
@@ -853,6 +959,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "DynamoDB",
+    "name": "DynamoDB",
     "title": "DynamoDB",
     "category": "Base de Datos",
     "collection": "Base de Datos",
@@ -861,6 +968,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "ElastiCache",
+    "name": "ElastiCache",
     "title": "ElastiCache",
     "category": "Base de Datos",
     "collection": "Base de Datos",
@@ -869,6 +977,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Keyspaces",
+    "name": "Keyspaces",
     "title": "Keyspaces",
     "category": "Base de Datos",
     "collection": "Base de Datos",
@@ -877,6 +986,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "MemoryDB-for-Redis",
+    "name": "MemoryDB for Redis",
     "title": "MemoryDB for Redis",
     "category": "Base de Datos",
     "collection": "Base de Datos",
@@ -885,6 +995,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Neptune",
+    "name": "Neptune",
     "title": "Neptune",
     "category": "Base de Datos",
     "collection": "Base de Datos",
@@ -893,6 +1004,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "RDS-on-VMware",
+    "name": "RDS on VMware",
     "title": "RDS on VMware",
     "category": "Base de Datos",
     "collection": "Base de Datos",
@@ -901,6 +1013,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "RDS",
+    "name": "RDS",
     "title": "RDS",
     "category": "Base de Datos",
     "collection": "Base de Datos",
@@ -909,6 +1022,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Timestream",
+    "name": "Timestream",
     "title": "Timestream",
     "category": "Base de Datos",
     "collection": "Base de Datos",
@@ -917,6 +1031,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Application-Composer",
+    "name": "Application Composer",
     "title": "Application Composer",
     "category": "Herramientas de Desarrollador",
     "collection": "Herramientas de Desarrollador",
@@ -925,6 +1040,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Cloud-Control-API",
+    "name": "Cloud Control API",
     "title": "Cloud Control API",
     "category": "Herramientas de Desarrollador",
     "collection": "Herramientas de Desarrollador",
@@ -933,6 +1049,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Cloud-Development-Kit",
+    "name": "Cloud Development Kit",
     "title": "Cloud Development Kit",
     "category": "Herramientas de Desarrollador",
     "collection": "Herramientas de Desarrollador",
@@ -941,6 +1058,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Cloud9",
+    "name": "Cloud9",
     "title": "Cloud9",
     "category": "Herramientas de Desarrollador",
     "collection": "Herramientas de Desarrollador",
@@ -949,6 +1067,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "CloudShell",
+    "name": "CloudShell",
     "title": "CloudShell",
     "category": "Herramientas de Desarrollador",
     "collection": "Herramientas de Desarrollador",
@@ -957,6 +1076,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "CodeArtifact",
+    "name": "CodeArtifact",
     "title": "CodeArtifact",
     "category": "Herramientas de Desarrollador",
     "collection": "Herramientas de Desarrollador",
@@ -965,6 +1085,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "CodeBuild",
+    "name": "CodeBuild",
     "title": "CodeBuild",
     "category": "Herramientas de Desarrollador",
     "collection": "Herramientas de Desarrollador",
@@ -973,6 +1094,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "CodeCatalyst",
+    "name": "CodeCatalyst",
     "title": "CodeCatalyst",
     "category": "Herramientas de Desarrollador",
     "collection": "Herramientas de Desarrollador",
@@ -981,6 +1103,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "CodeCommit",
+    "name": "CodeCommit",
     "title": "CodeCommit",
     "category": "Herramientas de Desarrollador",
     "collection": "Herramientas de Desarrollador",
@@ -989,6 +1112,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "CodeDeploy",
+    "name": "CodeDeploy",
     "title": "CodeDeploy",
     "category": "Herramientas de Desarrollador",
     "collection": "Herramientas de Desarrollador",
@@ -997,6 +1121,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "CodePipeline",
+    "name": "CodePipeline",
     "title": "CodePipeline",
     "category": "Herramientas de Desarrollador",
     "collection": "Herramientas de Desarrollador",
@@ -1005,6 +1130,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "CodeStar",
+    "name": "CodeStar",
     "title": "CodeStar",
     "category": "Herramientas de Desarrollador",
     "collection": "Herramientas de Desarrollador",
@@ -1013,6 +1139,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Command-Line-Interface",
+    "name": "Command Line Interface",
     "title": "Command Line Interface",
     "category": "Herramientas de Desarrollador",
     "collection": "Herramientas de Desarrollador",
@@ -1021,6 +1148,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Corretto",
+    "name": "Corretto",
     "title": "Corretto",
     "category": "Herramientas de Desarrollador",
     "collection": "Herramientas de Desarrollador",
@@ -1029,6 +1157,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Tools-and-SDKs",
+    "name": "Tools and SDKs",
     "title": "Tools and SDKs",
     "category": "Herramientas de Desarrollador",
     "collection": "Herramientas de Desarrollador",
@@ -1037,6 +1166,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "X-Ray",
+    "name": "X Ray",
     "title": "X Ray",
     "category": "Herramientas de Desarrollador",
     "collection": "Herramientas de Desarrollador",
@@ -1045,6 +1175,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "AppStream",
+    "name": "AppStream",
     "title": "AppStream",
     "category": "Computación de Usuario Final",
     "collection": "Computación de Usuario Final",
@@ -1053,6 +1184,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "WorkLink",
+    "name": "WorkLink",
     "title": "WorkLink",
     "category": "Computación de Usuario Final",
     "collection": "Computación de Usuario Final",
@@ -1061,6 +1193,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "WorkSpaces-Family",
+    "name": "WorkSpaces Family",
     "title": "WorkSpaces Family",
     "category": "Computación de Usuario Final",
     "collection": "Computación de Usuario Final",
@@ -1069,6 +1202,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Amplify",
+    "name": "Amplify",
     "title": "Amplify",
     "category": "Front-End y Móvil",
     "collection": "Front-End y Móvil",
@@ -1077,6 +1211,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Device-Farm",
+    "name": "Device Farm",
     "title": "Device Farm",
     "category": "Front-End y Móvil",
     "collection": "Front-End y Móvil",
@@ -1085,6 +1220,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Location-Service",
+    "name": "Location Service",
     "title": "Location Service",
     "category": "Front-End y Móvil",
     "collection": "Front-End y Móvil",
@@ -1093,6 +1229,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "GameKit",
+    "name": "GameKit",
     "title": "GameKit",
     "category": "Juegos",
     "collection": "Juegos",
@@ -1101,6 +1238,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "GameLift",
+    "name": "GameLift",
     "title": "GameLift",
     "category": "Juegos",
     "collection": "Juegos",
@@ -1109,6 +1247,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "GameSparks",
+    "name": "GameSparks",
     "title": "GameSparks",
     "category": "Juegos",
     "collection": "Juegos",
@@ -1117,6 +1256,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Lumberyard",
+    "name": "Lumberyard",
     "title": "Lumberyard",
     "category": "Juegos",
     "collection": "Juegos",
@@ -1125,6 +1265,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Open-3D-Engine",
+    "name": "Open 3D Engine",
     "title": "Open 3D Engine",
     "category": "Juegos",
     "collection": "Juegos",
@@ -1133,6 +1274,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Marketplace_Dark",
+    "name": "Marketplace Dark",
     "title": "Marketplace Dark",
     "category": "General",
     "collection": "General",
@@ -1141,6 +1283,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Marketplace_Light",
+    "name": "Marketplace Light",
     "title": "Marketplace Light",
     "category": "General",
     "collection": "General",
@@ -1149,6 +1292,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "FreeRTOS",
+    "name": "FreeRTOS",
     "title": "FreeRTOS",
     "category": "Internet de las Cosas (IoT)",
     "collection": "Internet de las Cosas (IoT)",
@@ -1157,6 +1301,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IoT-1-Click",
+    "name": "IoT 1 Click",
     "title": "IoT 1 Click",
     "category": "Internet de las Cosas (IoT)",
     "collection": "Internet de las Cosas (IoT)",
@@ -1165,6 +1310,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IoT-Analytics",
+    "name": "IoT Analytics",
     "title": "IoT Analytics",
     "category": "Internet de las Cosas (IoT)",
     "collection": "Internet de las Cosas (IoT)",
@@ -1173,6 +1319,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IoT-Button",
+    "name": "IoT Button",
     "title": "IoT Button",
     "category": "Internet de las Cosas (IoT)",
     "collection": "Internet de las Cosas (IoT)",
@@ -1181,6 +1328,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IoT-Core",
+    "name": "IoT Core",
     "title": "IoT Core",
     "category": "Internet de las Cosas (IoT)",
     "collection": "Internet de las Cosas (IoT)",
@@ -1189,6 +1337,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IoT-Device-Defender",
+    "name": "IoT Device Defender",
     "title": "IoT Device Defender",
     "category": "Internet de las Cosas (IoT)",
     "collection": "Internet de las Cosas (IoT)",
@@ -1197,6 +1346,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IoT-Device-Management",
+    "name": "IoT Device Management",
     "title": "IoT Device Management",
     "category": "Internet de las Cosas (IoT)",
     "collection": "Internet de las Cosas (IoT)",
@@ -1205,6 +1355,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IoT-EduKit",
+    "name": "IoT EduKit",
     "title": "IoT EduKit",
     "category": "Internet de las Cosas (IoT)",
     "collection": "Internet de las Cosas (IoT)",
@@ -1213,6 +1364,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IoT-Events",
+    "name": "IoT Events",
     "title": "IoT Events",
     "category": "Internet de las Cosas (IoT)",
     "collection": "Internet de las Cosas (IoT)",
@@ -1221,6 +1373,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IoT-ExpressLink",
+    "name": "IoT ExpressLink",
     "title": "IoT ExpressLink",
     "category": "Internet de las Cosas (IoT)",
     "collection": "Internet de las Cosas (IoT)",
@@ -1229,6 +1382,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IoT-FleetWise",
+    "name": "IoT FleetWise",
     "title": "IoT FleetWise",
     "category": "Internet de las Cosas (IoT)",
     "collection": "Internet de las Cosas (IoT)",
@@ -1237,6 +1391,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IoT-Greengrass",
+    "name": "IoT Greengrass",
     "title": "IoT Greengrass",
     "category": "Internet de las Cosas (IoT)",
     "collection": "Internet de las Cosas (IoT)",
@@ -1245,6 +1400,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IoT-RoboRunner",
+    "name": "IoT RoboRunner",
     "title": "IoT RoboRunner",
     "category": "Internet de las Cosas (IoT)",
     "collection": "Internet de las Cosas (IoT)",
@@ -1253,6 +1409,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IoT-SiteWise",
+    "name": "IoT SiteWise",
     "title": "IoT SiteWise",
     "category": "Internet de las Cosas (IoT)",
     "collection": "Internet de las Cosas (IoT)",
@@ -1261,6 +1418,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IoT-Things-Graph",
+    "name": "IoT Things Graph",
     "title": "IoT Things Graph",
     "category": "Internet de las Cosas (IoT)",
     "collection": "Internet de las Cosas (IoT)",
@@ -1269,6 +1427,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IoT-TwinMaker",
+    "name": "IoT TwinMaker",
     "title": "IoT TwinMaker",
     "category": "Internet de las Cosas (IoT)",
     "collection": "Internet de las Cosas (IoT)",
@@ -1277,6 +1436,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Apache-MXNet-on-AWS",
+    "name": "Apache MXNet on AWS",
     "title": "Apache MXNet on AWS",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1285,6 +1445,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Augmented-AI-A2I",
+    "name": "Augmented AI A2I",
     "title": "Augmented AI A2I",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1293,6 +1454,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "CodeGuru",
+    "name": "CodeGuru",
     "title": "CodeGuru",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1301,6 +1463,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "CodeWhisperer",
+    "name": "CodeWhisperer",
     "title": "CodeWhisperer",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1309,6 +1472,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Comprehend-Medical",
+    "name": "Comprehend Medical",
     "title": "Comprehend Medical",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1317,6 +1481,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Comprehend",
+    "name": "Comprehend",
     "title": "Comprehend",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1325,6 +1490,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Deep-Learning-AMIs",
+    "name": "Deep Learning AMIs",
     "title": "Deep Learning AMIs",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1333,6 +1499,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Deep-Learning-Containers",
+    "name": "Deep Learning Containers",
     "title": "Deep Learning Containers",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1341,6 +1508,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "DeepComposer",
+    "name": "DeepComposer",
     "title": "DeepComposer",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1349,6 +1517,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "DeepLens",
+    "name": "DeepLens",
     "title": "DeepLens",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1357,6 +1526,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "DeepRacer",
+    "name": "DeepRacer",
     "title": "DeepRacer",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1365,6 +1535,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "DevOps-Guru",
+    "name": "DevOps Guru",
     "title": "DevOps Guru",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1373,6 +1544,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elastic-Inference",
+    "name": "Elastic Inference",
     "title": "Elastic Inference",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1381,6 +1553,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Forecast",
+    "name": "Forecast",
     "title": "Forecast",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1389,6 +1562,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Fraud-Detector",
+    "name": "Fraud Detector",
     "title": "Fraud Detector",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1397,6 +1571,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "HealthLake",
+    "name": "HealthLake",
     "title": "HealthLake",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1405,6 +1580,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Kendra",
+    "name": "Kendra",
     "title": "Kendra",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1413,6 +1589,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Lex",
+    "name": "Lex",
     "title": "Lex",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1421,6 +1598,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Lookout-for-Equipment",
+    "name": "Lookout for Equipment",
     "title": "Lookout for Equipment",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1429,6 +1607,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Lookout-for-Metrics",
+    "name": "Lookout for Metrics",
     "title": "Lookout for Metrics",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1437,6 +1616,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Lookout-for-Vision",
+    "name": "Lookout for Vision",
     "title": "Lookout for Vision",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1445,6 +1625,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Monitron",
+    "name": "Monitron",
     "title": "Monitron",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1453,6 +1634,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Neuron",
+    "name": "Neuron",
     "title": "Neuron",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1461,6 +1643,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Omics",
+    "name": "Omics",
     "title": "Omics",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1469,6 +1652,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Panorama",
+    "name": "Panorama",
     "title": "Panorama",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1477,6 +1661,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Personalize",
+    "name": "Personalize",
     "title": "Personalize",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1485,6 +1670,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Polly",
+    "name": "Polly",
     "title": "Polly",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1493,6 +1679,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Rekognition",
+    "name": "Rekognition",
     "title": "Rekognition",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1501,6 +1688,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "SageMaker-Ground-Truth",
+    "name": "SageMaker Ground Truth",
     "title": "SageMaker Ground Truth",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1509,6 +1697,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "SageMaker-Studio-Lab",
+    "name": "SageMaker Studio Lab",
     "title": "SageMaker Studio Lab",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1517,6 +1706,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "SageMaker",
+    "name": "SageMaker",
     "title": "SageMaker",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1525,6 +1715,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "TensorFlow-on-AWS",
+    "name": "TensorFlow on AWS",
     "title": "TensorFlow on AWS",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1533,6 +1724,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Textract",
+    "name": "Textract",
     "title": "Textract",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1541,6 +1733,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "TorchServe",
+    "name": "TorchServe",
     "title": "TorchServe",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1549,6 +1742,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Transcribe",
+    "name": "Transcribe",
     "title": "Transcribe",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1557,6 +1751,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Translate",
+    "name": "Translate",
     "title": "Translate",
     "category": "Machine Learning",
     "collection": "Machine Learning",
@@ -1565,6 +1760,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "AppConfig",
+    "name": "AppConfig",
     "title": "AppConfig",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1573,6 +1769,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Application-Auto-Scaling",
+    "name": "Application Auto Scaling",
     "title": "Application Auto Scaling",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1581,6 +1778,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Auto-Scaling",
+    "name": "Auto Scaling",
     "title": "Auto Scaling",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1589,6 +1787,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Backint-Agent",
+    "name": "Backint Agent",
     "title": "Backint Agent",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1597,6 +1796,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Chatbot",
+    "name": "Chatbot",
     "title": "Chatbot",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1605,6 +1805,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "CloudFormation",
+    "name": "CloudFormation",
     "title": "CloudFormation",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1613,6 +1814,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "CloudTrail",
+    "name": "CloudTrail",
     "title": "CloudTrail",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1621,6 +1823,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "CloudWatch",
+    "name": "CloudWatch",
     "title": "CloudWatch",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1629,6 +1832,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Config",
+    "name": "Config",
     "title": "Config",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1637,6 +1841,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Control-Tower",
+    "name": "Control Tower",
     "title": "Control Tower",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1645,6 +1850,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Distro-for-OpenTelemetry",
+    "name": "Distro for OpenTelemetry",
     "title": "Distro for OpenTelemetry",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1653,6 +1859,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Fault-Injection-Simulator",
+    "name": "Fault Injection Simulator",
     "title": "Fault Injection Simulator",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1661,6 +1868,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Launch-Wizard",
+    "name": "Launch Wizard",
     "title": "Launch Wizard",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1669,6 +1877,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "License-Manager",
+    "name": "License Manager",
     "title": "License Manager",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1677,6 +1886,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Managed-Grafana",
+    "name": "Managed Grafana",
     "title": "Managed Grafana",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1685,6 +1895,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Managed-Service-for-Prometheus",
+    "name": "Managed Service for Prometheus",
     "title": "Managed Service for Prometheus",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1693,6 +1904,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Management-Console",
+    "name": "Management Console",
     "title": "Management Console",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1701,6 +1913,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "OpsWorks",
+    "name": "OpsWorks",
     "title": "OpsWorks",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1709,6 +1922,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Organizations",
+    "name": "Organizations",
     "title": "Organizations",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1717,6 +1931,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Personal-Health-Dashboard",
+    "name": "Personal Health Dashboard",
     "title": "Personal Health Dashboard",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1725,6 +1940,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Proton",
+    "name": "Proton",
     "title": "Proton",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1733,6 +1949,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Resilience-Hub",
+    "name": "Resilience Hub",
     "title": "Resilience Hub",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1741,6 +1958,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Resource-Explorer",
+    "name": "Resource Explorer",
     "title": "Resource Explorer",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1749,6 +1967,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Service-Catalog",
+    "name": "Service Catalog",
     "title": "Service Catalog",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1757,6 +1976,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Service-Management-Connector",
+    "name": "Service Management Connector",
     "title": "Service Management Connector",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1765,6 +1985,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Systems-Manager",
+    "name": "Systems Manager",
     "title": "Systems Manager",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1773,6 +1994,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Trusted-Advisor",
+    "name": "Trusted Advisor",
     "title": "Trusted Advisor",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1781,6 +2003,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Well-Architected-Tool",
+    "name": "Well Architected Tool",
     "title": "Well Architected Tool",
     "category": "Gestión y Gobierno",
     "collection": "Gestión y Gobierno",
@@ -1789,6 +2012,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elastic-Transcoder",
+    "name": "Elastic Transcoder",
     "title": "Elastic Transcoder",
     "category": "Servicios Multimedia",
     "collection": "Servicios Multimedia",
@@ -1797,6 +2021,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elemental-Appliances-&-Software",
+    "name": "Elemental Appliances & Software",
     "title": "Elemental Appliances & Software",
     "category": "Servicios Multimedia",
     "collection": "Servicios Multimedia",
@@ -1805,6 +2030,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elemental-Conductor",
+    "name": "Elemental Conductor",
     "title": "Elemental Conductor",
     "category": "Servicios Multimedia",
     "collection": "Servicios Multimedia",
@@ -1813,6 +2039,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elemental-Delta",
+    "name": "Elemental Delta",
     "title": "Elemental Delta",
     "category": "Servicios Multimedia",
     "collection": "Servicios Multimedia",
@@ -1821,6 +2048,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elemental-Link",
+    "name": "Elemental Link",
     "title": "Elemental Link",
     "category": "Servicios Multimedia",
     "collection": "Servicios Multimedia",
@@ -1829,6 +2057,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elemental-Live",
+    "name": "Elemental Live",
     "title": "Elemental Live",
     "category": "Servicios Multimedia",
     "collection": "Servicios Multimedia",
@@ -1837,6 +2066,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elemental-MediaConnect",
+    "name": "Elemental MediaConnect",
     "title": "Elemental MediaConnect",
     "category": "Servicios Multimedia",
     "collection": "Servicios Multimedia",
@@ -1845,6 +2075,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elemental-MediaConvert",
+    "name": "Elemental MediaConvert",
     "title": "Elemental MediaConvert",
     "category": "Servicios Multimedia",
     "collection": "Servicios Multimedia",
@@ -1853,6 +2084,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elemental-MediaLive",
+    "name": "Elemental MediaLive",
     "title": "Elemental MediaLive",
     "category": "Servicios Multimedia",
     "collection": "Servicios Multimedia",
@@ -1861,6 +2093,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elemental-MediaPackage",
+    "name": "Elemental MediaPackage",
     "title": "Elemental MediaPackage",
     "category": "Servicios Multimedia",
     "collection": "Servicios Multimedia",
@@ -1869,6 +2102,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elemental-MediaStore",
+    "name": "Elemental MediaStore",
     "title": "Elemental MediaStore",
     "category": "Servicios Multimedia",
     "collection": "Servicios Multimedia",
@@ -1877,6 +2111,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elemental-MediaTailor",
+    "name": "Elemental MediaTailor",
     "title": "Elemental MediaTailor",
     "category": "Servicios Multimedia",
     "collection": "Servicios Multimedia",
@@ -1885,6 +2120,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elemental-Server",
+    "name": "Elemental Server",
     "title": "Elemental Server",
     "category": "Servicios Multimedia",
     "collection": "Servicios Multimedia",
@@ -1893,6 +2129,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Interactive-Video-Service",
+    "name": "Interactive Video Service",
     "title": "Interactive Video Service",
     "category": "Servicios Multimedia",
     "collection": "Servicios Multimedia",
@@ -1901,6 +2138,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Kinesis-Video-Streams",
+    "name": "Kinesis Video Streams",
     "title": "Kinesis Video Streams",
     "category": "Servicios Multimedia",
     "collection": "Servicios Multimedia",
@@ -1909,6 +2147,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Nimble-Studio",
+    "name": "Nimble Studio",
     "title": "Nimble Studio",
     "category": "Servicios Multimedia",
     "collection": "Servicios Multimedia",
@@ -1917,6 +2156,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Application-Discovery-Service",
+    "name": "Application Discovery Service",
     "title": "Application Discovery Service",
     "category": "Migración y Transferencia",
     "collection": "Migración y Transferencia",
@@ -1925,6 +2165,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Application-Migration-Service",
+    "name": "Application Migration Service",
     "title": "Application Migration Service",
     "category": "Migración y Transferencia",
     "collection": "Migración y Transferencia",
@@ -1933,6 +2174,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "DataSync",
+    "name": "DataSync",
     "title": "DataSync",
     "category": "Migración y Transferencia",
     "collection": "Migración y Transferencia",
@@ -1941,6 +2183,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Mainframe-Modernization",
+    "name": "Mainframe Modernization",
     "title": "Mainframe Modernization",
     "category": "Migración y Transferencia",
     "collection": "Migración y Transferencia",
@@ -1949,6 +2192,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Migration-Evaluator",
+    "name": "Migration Evaluator",
     "title": "Migration Evaluator",
     "category": "Migración y Transferencia",
     "collection": "Migración y Transferencia",
@@ -1957,6 +2201,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Migration-Hub",
+    "name": "Migration Hub",
     "title": "Migration Hub",
     "category": "Migración y Transferencia",
     "collection": "Migración y Transferencia",
@@ -1965,6 +2210,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Server-Migration-Service",
+    "name": "Server Migration Service",
     "title": "Server Migration Service",
     "category": "Migración y Transferencia",
     "collection": "Migración y Transferencia",
@@ -1973,6 +2219,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Transfer-Family",
+    "name": "Transfer Family",
     "title": "Transfer Family",
     "category": "Migración y Transferencia",
     "collection": "Migración y Transferencia",
@@ -1981,6 +2228,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "App-Mesh",
+    "name": "App Mesh",
     "title": "App Mesh",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -1989,6 +2237,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Client-VPN",
+    "name": "Client VPN",
     "title": "Client VPN",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -1997,6 +2246,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Cloud-Directory",
+    "name": "Cloud Directory",
     "title": "Cloud Directory",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -2005,6 +2255,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Cloud-Map",
+    "name": "Cloud Map",
     "title": "Cloud Map",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -2013,6 +2264,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Cloud-WAN",
+    "name": "Cloud WAN",
     "title": "Cloud WAN",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -2021,6 +2273,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "CloudFront",
+    "name": "CloudFront",
     "title": "CloudFront",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -2029,6 +2282,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Direct-Connect",
+    "name": "Direct Connect",
     "title": "Direct Connect",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -2037,6 +2291,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elastic-Load-Balancing",
+    "name": "Elastic Load Balancing",
     "title": "Elastic Load Balancing",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -2045,6 +2300,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Global-Accelerator",
+    "name": "Global Accelerator",
     "title": "Global Accelerator",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -2053,6 +2309,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Private-5G",
+    "name": "Private 5G",
     "title": "Private 5G",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -2061,6 +2318,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "PrivateLink",
+    "name": "PrivateLink",
     "title": "PrivateLink",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -2069,6 +2327,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Route-53",
+    "name": "Route 53",
     "title": "Route 53",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -2077,6 +2336,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Site-to-Site-VPN",
+    "name": "Site to Site VPN",
     "title": "Site to Site VPN",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -2085,6 +2345,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Transit-Gateway",
+    "name": "Transit Gateway",
     "title": "Transit Gateway",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -2093,6 +2354,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Verified-Access",
+    "name": "Verified Access",
     "title": "Verified Access",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -2101,6 +2363,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Virtual-Private-Cloud",
+    "name": "Virtual Private Cloud",
     "title": "Virtual Private Cloud",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -2109,6 +2372,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "VPC-Lattice",
+    "name": "VPC Lattice",
     "title": "VPC Lattice",
     "category": "Redes y Entrega de Contenido",
     "collection": "Redes y Entrega de Contenido",
@@ -2117,6 +2381,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Braket",
+    "name": "Braket",
     "title": "Braket",
     "category": "Tecnologías Cuánticas",
     "collection": "Tecnologías Cuánticas",
@@ -2125,6 +2390,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "RoboMaker",
+    "name": "RoboMaker",
     "title": "RoboMaker",
     "category": "Robótica",
     "collection": "Robótica",
@@ -2133,6 +2399,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Ground-Station",
+    "name": "Ground Station",
     "title": "Ground Station",
     "category": "Satélite",
     "collection": "Satélite",
@@ -2141,6 +2408,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Artifact",
+    "name": "Artifact",
     "title": "Artifact",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2149,6 +2417,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Audit-Manager",
+    "name": "Audit Manager",
     "title": "Audit Manager",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2157,6 +2426,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Certificate-Manager",
+    "name": "Certificate Manager",
     "title": "Certificate Manager",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2165,6 +2435,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Cloud-Directory",
+    "name": "Cloud Directory",
     "title": "Cloud Directory",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2173,6 +2444,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "CloudHSM",
+    "name": "CloudHSM",
     "title": "CloudHSM",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2181,6 +2453,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Cognito",
+    "name": "Cognito",
     "title": "Cognito",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2189,6 +2462,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Detective",
+    "name": "Detective",
     "title": "Detective",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2197,6 +2471,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Directory-Service",
+    "name": "Directory Service",
     "title": "Directory Service",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2205,6 +2480,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Firewall-Manager",
+    "name": "Firewall Manager",
     "title": "Firewall Manager",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2213,6 +2489,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "GuardDuty",
+    "name": "GuardDuty",
     "title": "GuardDuty",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2221,6 +2498,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "IAM-Identity-Center",
+    "name": "IAM Identity Center",
     "title": "IAM Identity Center",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2229,6 +2507,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Identity-and-Access-Management",
+    "name": "Identity and Access Management",
     "title": "Identity and Access Management",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2237,6 +2516,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Inspector",
+    "name": "Inspector",
     "title": "Inspector",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2245,6 +2525,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Key-Management-Service",
+    "name": "Key Management Service",
     "title": "Key Management Service",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2253,6 +2534,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Macie",
+    "name": "Macie",
     "title": "Macie",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2261,6 +2543,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Network-Firewall",
+    "name": "Network Firewall",
     "title": "Network Firewall",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2269,6 +2552,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Private-Certificate-Authority",
+    "name": "Private Certificate Authority",
     "title": "Private Certificate Authority",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2277,6 +2561,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Resource-Access-Manager",
+    "name": "Resource Access Manager",
     "title": "Resource Access Manager",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2285,6 +2570,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Secrets-Manager",
+    "name": "Secrets Manager",
     "title": "Secrets Manager",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2293,6 +2579,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Security-Hub",
+    "name": "Security Hub",
     "title": "Security Hub",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2301,6 +2588,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Security-Lake",
+    "name": "Security Lake",
     "title": "Security Lake",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2309,6 +2597,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Shield",
+    "name": "Shield",
     "title": "Shield",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2317,6 +2606,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Signer",
+    "name": "Signer",
     "title": "Signer",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2325,6 +2615,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Verified-Permissions",
+    "name": "Verified Permissions",
     "title": "Verified Permissions",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2333,6 +2624,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "WAF",
+    "name": "WAF",
     "title": "WAF",
     "category": "Seguridad e Identidad",
     "collection": "Seguridad e Identidad",
@@ -2341,6 +2633,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Backup",
+    "name": "Backup",
     "title": "Backup",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2349,6 +2642,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "EFS",
+    "name": "EFS",
     "title": "EFS",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2357,6 +2651,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elastic-Block-Store",
+    "name": "Elastic Block Store",
     "title": "Elastic Block Store",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2365,6 +2660,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Elastic-Disaster-Recovery",
+    "name": "Elastic Disaster Recovery",
     "title": "Elastic Disaster Recovery",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2373,6 +2669,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "File-Cache",
+    "name": "File Cache",
     "title": "File Cache",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2381,6 +2678,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "FSx-for-Lustre",
+    "name": "FSx for Lustre",
     "title": "FSx for Lustre",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2389,6 +2687,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "FSx-for-NetApp-ONTAP",
+    "name": "FSx for NetApp ONTAP",
     "title": "FSx for NetApp ONTAP",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2397,6 +2696,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "FSx-for-OpenZFS",
+    "name": "FSx for OpenZFS",
     "title": "FSx for OpenZFS",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2405,6 +2705,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "FSx-for-WFS",
+    "name": "FSx for WFS",
     "title": "FSx for WFS",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2413,6 +2714,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "FSx",
+    "name": "FSx",
     "title": "FSx",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2421,6 +2723,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "S3-on-Outposts",
+    "name": "S3 on Outposts",
     "title": "S3 on Outposts",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2429,6 +2732,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Simple-Storage-Service-Glacier",
+    "name": "Simple Storage Service Glacier",
     "title": "Simple Storage Service Glacier",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2437,6 +2741,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Simple-Storage-Service",
+    "name": "Simple Storage Service",
     "title": "Simple Storage Service",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2445,6 +2750,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Snowball-Edge",
+    "name": "Snowball Edge",
     "title": "Snowball Edge",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2453,6 +2759,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Snowball",
+    "name": "Snowball",
     "title": "Snowball",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2461,6 +2768,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Snowcone",
+    "name": "Snowcone",
     "title": "Snowcone",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2469,6 +2777,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Snowmobile",
+    "name": "Snowmobile",
     "title": "Snowmobile",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2477,6 +2786,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Storage-Gateway",
+    "name": "Storage Gateway",
     "title": "Storage Gateway",
     "category": "Almacenamiento",
     "collection": "Almacenamiento",
@@ -2485,6 +2795,7 @@ export const generatedAwsIcons = {
   },
   {
     "id": "Sumerian",
+    "name": "Sumerian",
     "title": "Sumerian",
     "category": "VR / AR",
     "collection": "VR / AR",

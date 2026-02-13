@@ -52,7 +52,7 @@ export const loadIconPack = async (packName: IconPackName): Promise<any> => {
   console.log(`Attempting to load icon pack: ${packName}`);
   switch (packName) {
     case 'aws':
-      return (await import('../generatedAwsIcons')).default;
+      return (await import('../generatedAwsIcons')).generatedAwsIcons;
     default:
       throw new Error(`Unknown icon pack: ${packName}`);
   }
