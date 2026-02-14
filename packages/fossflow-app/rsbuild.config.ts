@@ -46,6 +46,10 @@ export default defineConfig({
                 from: './public/.nojekyll',
                 to: '.nojekyll',
             },
+            {
+                from: './public/pngs',
+                to: 'pngs',
+            },
         ]
     }
 });

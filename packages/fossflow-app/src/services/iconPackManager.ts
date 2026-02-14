@@ -82,7 +82,16 @@ export const loadIconPack = async (packName: IconPackName): Promise<any> => {
   switch (packName) {
     case 'aws':
       const awsPack = (await import('../generatedAwsIcons')).generatedAwsIcons;
-      return organizeIconsByCategory(awsPack);
+      // Fix icon URLs to include PUBLIC_URL for GitHub Pages deployment
+      const publicUrl = process.env.PUBLIC_URL || '';
+      const fixedAwsPack = {
+        ...awsPack,
+        icons: awsPack.icons.map((icon: any) => ({
+          ...icon,
+          url: icon.url.startsWith('/') ? `${publicUrl}${icon.url}` : icon.url
+        }))
+      };
+      return organizeIconsByCategory(fixedAwsPack);
     default:
       throw new Error(`Unknown icon pack: ${packName}`);
   }
