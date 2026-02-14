@@ -96,7 +96,10 @@ export const NodeControls = ({ id }: Props) => {
             <Box
               component="img"
               src={icon.url}
-              sx={{ width: 70, height: 70 }}
+              sx={{ 
+                width: 70, 
+                height: 70
+              }}
             />
             {mode === 'SETTINGS' && (
               <Button
@@ -106,7 +109,7 @@ export const NodeControls = ({ id }: Props) => {
                 }}
                 variant="text"
               >
-                Update icon
+                Servicios AWS
               </Button>
             )}
             {mode === 'CHANGE_ICON' && (
@@ -117,7 +120,7 @@ export const NodeControls = ({ id }: Props) => {
                 }}
                 variant="text"
               >
-                Settings
+                Ajustes
               </Button>
             )}
           </Stack>
@@ -143,7 +146,16 @@ export const NodeControls = ({ id }: Props) => {
         <QuickIconSelector
           currentIconId={modelItem.icon}
           onIconSelected={(_icon) => {
+            // Update icon
             updateModelItem(viewItem.id, { icon: _icon.id });
+            
+            // Auto-fill name with "Category - Icon Name" if name is empty
+            if (!modelItem.name || modelItem.name.trim() === '') {
+              const category = _icon.collection?.replace(/-/g, ' ') || 'General';
+              const iconName = _icon.id.replace(/-/g, ' ');
+              const autoName = `${category} - ${iconName}`;
+              updateModelItem(viewItem.id, { name: autoName });
+            }
           }}
           onClose={() => {
             onSwitchMode('SETTINGS');

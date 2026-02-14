@@ -17,8 +17,8 @@ Este glosario proporciona una descripción rápida de los servicios de AWS más 
 | **Amazon EKS** | Contenedores | Servicio de Kubernetes administrado para ejecutar aplicaciones en contenedores. |
 | **AWS Fargate** | Cómputo | Motor de computación serverless para contenedores. |
 | **Amazon SNS** | Integración | Servicio de mensajería pub/sub totalmente administrado. |
-| **Amazon SQS** | Integración | Servicio de colas de mensajes administrado para desacoplar microservicios. |
-| **AWS Step Functions** | Integración | Coordinación de componentes distribuidos y microservicios mediante flujos de trabajo visuales. |
+| **Amazon SQS** | Integración | Servicio de colas de mensajes administrado para desacoplar servicios. |
+| **AWS Step Functions** | Integración | Coordinación de componentes distribuidos y servicios mediante flujos de trabajo visuales. |
 | **Amazon CloudWatch** | Gestión | Servicio de monitoreo y observabilidad para recursos y aplicaciones de AWS. |
 | **AWS CloudFormation** | Gestión | Modelado y aprovisionamiento de recursos de infraestructura como código. |
 | **AWS IAM** | Seguridad | Gestión de acceso e identidad para recursos de AWS de forma segura. |

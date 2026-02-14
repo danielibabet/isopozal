@@ -14,6 +14,7 @@ import {
   anchorSchema,
   textBoxSchema,
   rectangleSchema,
+  rectangleLabelSchema,
   connectorStyleOptions,
   connectorLineTypeOptions
 } from 'src/schemas';
@@ -35,6 +36,7 @@ export type ConnectorAnchor = z.infer<typeof anchorSchema>;
 export type ConnectorLabel = z.infer<typeof connectorLabelSchema>;
 export type Connector = z.infer<typeof connectorSchema>;
 export type TextBox = z.infer<typeof textBoxSchema>;
+export type RectangleLabel = z.infer<typeof rectangleLabelSchema>;
 export type Rectangle = z.infer<typeof rectangleSchema>;
 
 export type ModelStore = Model & {

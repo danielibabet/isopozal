@@ -50,7 +50,8 @@ export function useTranslation<K extends keyof LocaleProps>(namespace?: K) {
     // Return scoped translation function for specific namespace
     const namespaceData = locale[namespace];
     const t = (key: keyof LocaleProps[K]): string => {
-      const value = namespaceData[key];
+      if (!namespaceData) return String(key);
+      const value = (namespaceData as any)[key];
       return typeof value === 'string' ? value : String(key);
     };
     return { t };

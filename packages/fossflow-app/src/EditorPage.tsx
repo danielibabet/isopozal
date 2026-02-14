@@ -451,7 +451,8 @@ function EditorPage() {
               border: '1px solid #ffeeba',
               padding: '15px',
               borderRadius: '4px',
-              marginBottom: '20px'
+              marginBottom: '20px',
+              color: '#000000'
             }}>
               <strong>⚠️ {t('dialog.save.warningTitle')}:</strong> {t('dialog.save.warningMessage')}
               <br />
@@ -483,7 +484,8 @@ function EditorPage() {
               border: '1px solid #ffeeba',
               padding: '15px',
               borderRadius: '4px',
-              marginBottom: '20px'
+              marginBottom: '20px',
+              color: '#000000'
             }}>
               <strong>⚠️ {t('dialog.load.noteTitle')}:</strong> {t('dialog.load.noteMessage')}
             </div>
@@ -524,12 +526,13 @@ function EditorPage() {
               border: '1px solid #c3e6cb',
               padding: '15px',
               borderRadius: '8px',
-              marginBottom: '20px'
+              marginBottom: '20px',
+              color: '#000000'
             }}>
               <p style={{ margin: '0 0 10px 0' }}>
                 <strong>✅ {t('dialog.export.recommendedTitle')}:</strong> {t('dialog.export.recommendedMessage')}
               </p>
-              <p style={{ margin: 0, fontSize: '14px', color: '#155724' }}>
+              <p style={{ margin: 0, fontSize: '14px', color: '#000000' }}>
                 {t('dialog.export.noteMessage')}
               </p>
             </div>

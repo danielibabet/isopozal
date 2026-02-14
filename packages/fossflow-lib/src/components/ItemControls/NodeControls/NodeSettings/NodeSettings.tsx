@@ -77,7 +77,7 @@ export const NodeSettings = ({
 
   return (
     <>
-      <Section title="Name">
+      <Section title="NOMBRE">
         <TextField
           value={modelItem.name}
           onChange={(e) => {
@@ -86,7 +86,7 @@ export const NodeSettings = ({
           }}
         />
       </Section>
-      <Section title="Description">
+      <Section title="DESCRIPCIÓN">
         <RichTextEditor
           value={modelItem.description}
           onChange={(text) => {
@@ -96,7 +96,7 @@ export const NodeSettings = ({
         />
       </Section>
       {modelItem.name && (
-        <Section title="Label height">
+        <Section title="ALTURA ETIQUETA">
           <Slider
             marks
             step={20}
@@ -111,7 +111,7 @@ export const NodeSettings = ({
         </Section>
       )}
 
-      <Section title="Icon size">
+      <Section title="TAMAÑO ICONO">
         <Slider
           marks
           step={0.1}

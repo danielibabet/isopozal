@@ -1,7 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import Backend from 'i18next-http-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
 
 // Ensure PUBLIC_URL ends with slash for consistent path construction
 const publicUrl = process.env.PUBLIC_URL || '';
@@ -13,8 +12,8 @@ i18n
   .init({
     lng: 'es-ES',
     fallbackLng: 'es-ES',
-    supportedLngs: ['es-ES'], // Elimina los demás
-    debug: process.env.NODE_ENV === 'development',
+    supportedLngs: ['es-ES'],
+    debug: false,
     interpolation: {
       escapeValue: false
     },
@@ -22,7 +21,12 @@ i18n
     backend: {
       loadPath: `${basePath}i18n/{{ns}}/{{lng}}.json`
     },
-    // Removed detection config
+    react: {
+      useSuspense: false
+    },
+    // Silence warnings about unsupported languages
+    saveMissing: false,
+    missingKeyHandler: false
   });
 
 export const supportedLanguages = [

@@ -195,6 +195,31 @@ export interface LocaleProps {
     canDisable: string;
     signature: string;
   };
+  exportImageDialog?: {
+    title: string;
+    browserCompatibilityTitle: string;
+    browserCompatibilityMessage: string;
+    options: string;
+    showGrid: string;
+    expandDescriptions: string;
+    cropToContent: string;
+    backgroundColor: string;
+    transparentBackground: string;
+    exportQuality: string;
+    custom: string;
+    scale: string;
+    dpi: string;
+    clickAndDragToSelect: string;
+    recrop: string;
+    cropAppliedSuccessfully: string;
+    applyCrop: string;
+    clearSelection: string;
+    selectAreaOrUncheck: string;
+    cancel: string;
+    downloadAsSVG: string;
+    downloadAsPNG: string;
+    couldNotExportImage: string;
+  };
   // other namespaces can be added here
 }
 

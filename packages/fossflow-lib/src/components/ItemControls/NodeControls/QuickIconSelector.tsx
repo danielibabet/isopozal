@@ -14,33 +14,7 @@ interface Props {
   currentIconId?: string;
 }
 
-// Store recently used icons in localStorage
-const RECENT_ICONS_KEY = 'fossflow-recent-icons';
-const MAX_RECENT_ICONS = 12;
-
-const getRecentIcons = (): string[] => {
-  try {
-    const stored = localStorage.getItem(RECENT_ICONS_KEY);
-    return stored ? JSON.parse(stored) : [];
-  } catch {
-    return [];
-  }
-};
-
-const addToRecentIcons = (iconId: string) => {
-  const recent = getRecentIcons();
-  // Remove if already exists and add to front
-  const filtered = recent.filter(id => id !== iconId);
-  const updated = [iconId, ...filtered].slice(0, MAX_RECENT_ICONS);
-  localStorage.setItem(RECENT_ICONS_KEY, JSON.stringify(updated));
-};
-
-// Escape special regex characters
-const escapeRegex = (str: string): string => {
-  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-};
-
-export const QuickIconSelector = ({ onIconSelected, onClose, currentIconId }: Props) => {
+export const QuickIconSelector = ({ onIconSelected, onClose }: Props) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [hoveredIndex, setHoveredIndex] = useState(0);
   const searchInputRef = useRef<HTMLInputElement>(null);
@@ -48,28 +22,12 @@ export const QuickIconSelector = ({ onIconSelected, onClose, currentIconId }: Pr
   const icons = useModelStore((state) => state.icons);
   const { iconCategories } = useIconCategories();
 
-  // Get recently used icons
-  const recentIconIds = useMemo(() => getRecentIcons(), []);
-  const recentIcons = useMemo(() => {
-    return recentIconIds
-      .map(id => icons.find(icon => icon.id === id))
-      .filter(Boolean) as Icon[];
-  }, [recentIconIds, icons]);
-
-  // Filter icons based on search
+  // Filter icons based on search - simple string matching
   const filteredIcons = useMemo(() => {
     if (!searchTerm) return null;
     
-    try {
-      // Escape special regex characters to prevent errors
-      const escapedSearch = escapeRegex(searchTerm);
-      const regex = new RegExp(escapedSearch, 'gi');
-      return icons.filter(icon => regex.test(icon.name));
-    } catch (e) {
-      // If regex still fails somehow, fall back to simple includes
-      const lowerSearch = searchTerm.toLowerCase();
-      return icons.filter(icon => icon.name.toLowerCase().includes(lowerSearch));
-    }
+    const searchLower = searchTerm.toLowerCase().trim();
+    return icons.filter(icon => icon.name.toLowerCase().includes(searchLower));
   }, [searchTerm, icons]);
 
   // Focus search input on mount
@@ -129,7 +87,6 @@ export const QuickIconSelector = ({ onIconSelected, onClose, currentIconId }: Pr
   }, [filteredIcons, hoveredIndex, onClose]);
 
   const handleIconSelect = useCallback((icon: Icon) => {
-    addToRecentIcons(icon.id);
     onIconSelected(icon);
   }, [onIconSelected]);
 
@@ -146,7 +103,7 @@ export const QuickIconSelector = ({ onIconSelected, onClose, currentIconId }: Pr
           <TextField
             ref={searchInputRef}
             fullWidth
-            placeholder="Search icons (press Enter to select)"
+            placeholder="Buscar servicios AWS (pulsa Enter)"
             value={searchTerm}
             onChange={(e) => {
               setSearchTerm(e.target.value);
@@ -162,21 +119,6 @@ export const QuickIconSelector = ({ onIconSelected, onClose, currentIconId }: Pr
             size="small"
             autoFocus
           />
-
-          {/* Recently Used Icons - Show when no search */}
-          {!searchTerm && recentIcons.length > 0 && (
-            <>
-              <Typography variant="caption" color="text.secondary">
-                RECENTLY USED
-              </Typography>
-              <IconGrid
-                icons={recentIcons}
-                onClick={handleIconSelect}
-                onDoubleClick={handleIconDoubleClick}
-              />
-              <Divider />
-            </>
-          )}
         </Stack>
       </Section>
 
@@ -185,7 +127,7 @@ export const QuickIconSelector = ({ onIconSelected, onClose, currentIconId }: Pr
         <>
           <Section sx={{ py: 1 }}>
             <Typography variant="caption" color="text.secondary">
-              SEARCH RESULTS ({filteredIcons.length} icons)
+              BUSCAR RESULTADOS ({filteredIcons.length} servicios)
             </Typography>
           </Section>
           <Divider />
@@ -202,7 +144,7 @@ export const QuickIconSelector = ({ onIconSelected, onClose, currentIconId }: Pr
               </Section>
             ) : (
               <Section>
-                <Alert severity="info">No icons found matching "{searchTerm}"</Alert>
+                <Alert severity="info">No se encontraron coincidencias para "{searchTerm}"</Alert>
               </Section>
             )}
           </Box>
@@ -224,8 +166,8 @@ export const QuickIconSelector = ({ onIconSelected, onClose, currentIconId }: Pr
       <Section sx={{ py: 1 }}>
         <Typography variant="caption" color="text.secondary">
           {searchTerm 
-            ? 'Use arrow keys to navigate • Enter to select • Double-click to select and close'
-            : 'Type to search • Click category to expand • Double-click to select and close'
+            ? '← → para navegar • Enter para seleccionar • Doble clic para seleccionar y cerrar'
+            : 'Escriba para buscar • Clic en la categoría para expandir • Doble clic para seleccionar y cerrar'
           }
         </Typography>
       </Section>

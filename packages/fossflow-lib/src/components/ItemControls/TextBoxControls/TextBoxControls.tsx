@@ -55,7 +55,7 @@ export const TextBoxControls = ({ id }: Props) => {
         >
           <CloseIcon />
         </MUIIconButton>
-        <Section title="Enter text">
+        <Section title="Introducir texto">
           <TextField
             value={textBox.content}
             onChange={(e) => {
@@ -63,7 +63,7 @@ export const TextBoxControls = ({ id }: Props) => {
             }}
           />
         </Section>
-        <Section title="Text size">
+        <Section title="Tamaño texto">
           <Slider
             marks
             step={0.3}
@@ -75,7 +75,7 @@ export const TextBoxControls = ({ id }: Props) => {
             }}
           />
         </Section>
-        <Section title="Alignment">
+        <Section title="Orientación">
           <ToggleButtonGroup
             value={textBox.orientation}
             exclusive

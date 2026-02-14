@@ -15,7 +15,7 @@ export const DeleteButton = ({ onClick }: Props) => {
       startIcon={<DeleteIcon color="error" />}
       onClick={onClick}
     >
-      Delete
+      Eliminar
     </Button>
   );
 };

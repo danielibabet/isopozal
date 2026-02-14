@@ -34,7 +34,7 @@ export const DEFAULT_FONT_FAMILY = 'Roboto, Arial, sans-serif';
 export const VIEW_DEFAULTS: Required<
   Omit<View, 'id' | 'description' | 'lastUpdated'>
 > = {
-  name: 'Untitled view',
+  name: 'Vista Sin Título',
   items: [],
   connectors: [],
   rectangles: [],
@@ -68,16 +68,17 @@ export const CONNECTOR_SEARCH_OFFSET = { x: 1, y: 1 };
 export const TEXTBOX_DEFAULTS: Required<Omit<TextBox, 'id' | 'tile'>> = {
   orientation: 'X',
   fontSize: 0.6,
-  content: 'Text'
+  content: 'Texto'
 };
 
 export const TEXTBOX_PADDING = 0.2;
 export const TEXTBOX_FONT_WEIGHT = 'bold';
 
-export const RECTANGLE_DEFAULTS: Required<
+export const RECTANGLE_DEFAULTS: Partial<
   Omit<Rectangle, 'id' | 'from' | 'to' | 'color'>
 > = {
-  customColor: ''
+  customColor: '',
+  labels: []
 };
 
 export const ZOOM_INCREMENT = 0.05;

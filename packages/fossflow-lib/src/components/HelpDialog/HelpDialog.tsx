@@ -14,7 +14,8 @@ import {
   Paper,
   Typography,
   Box,
-  Divider
+  Divider,
+  Stack
 } from '@mui/material';
 import { Close as CloseIcon, Launch as LaunchIcon } from '@mui/icons-material';
 import { useUiStateStore } from 'src/stores/uiStateStore';
@@ -178,7 +179,8 @@ export const HelpDialog = () => {
                             backgroundColor: '#f5f5f5',
                             padding: '2px 6px',
                             borderRadius: '4px',
-                            fontFamily: 'monospace'
+                            fontFamily: 'monospace',
+                            color: '#000000'
                           }}
                         >
                           {shortcut.shortcut}
@@ -219,7 +221,8 @@ export const HelpDialog = () => {
                             backgroundColor: '#f5f5f5',
                             padding: '2px 6px',
                             borderRadius: '4px',
-                            fontFamily: 'monospace'
+                            fontFamily: 'monospace',
+                            color: '#000000'
                           }}
                         >
                           {interaction.shortcut}
@@ -236,23 +239,87 @@ export const HelpDialog = () => {
 
         <Divider sx={{ my: 3 }} />
 
-        <Box sx={{ mb: 3, p: 2, border: '1px solid #3c4b64', borderRadius: 2, bgcolor: 'background.paper' }}>
-          <Typography variant="h6" gutterBottom color="primary.main">
-            Recursos Oficiales AWS
-          </Typography>
-          <Typography variant="body2" paragraph>
-            Utilizando iconos oficiales Release 2025.07.31.
-          </Typography>
+        {/* Card superior con botón GitHub */}
+        <Box sx={{ mb: 2, p: 2, border: '1px solid #3c4b64', borderRadius: 2, bgcolor: 'background.paper', textAlign: 'center' }}>
           <Button
             variant="outlined"
             color="primary"
             startIcon={<LaunchIcon />}
-            href="https://aws.amazon.com/architecture/icons/"
+            href="https://github.com/danielibabet/isopozal"
             target="_blank"
             rel="noopener noreferrer"
+            size="large"
           >
-            AWS Architecture Icons
+            Github
           </Button>
+        </Box>
+
+        {/* 3 columnas con recursos */}
+        <Box sx={{ mb: 3 }}>
+          <Stack direction="row" spacing={2} sx={{ display: 'flex', justifyContent: 'space-between' }}>
+            {/* Columna 1: AWS */}
+            <Box sx={{ flex: 1, p: 2, border: '1px solid #3c4b64', borderRadius: 2, bgcolor: 'background.paper' }}>
+              <Typography variant="h6" gutterBottom color="primary.main">
+                Recursos Oficiales AWS
+              </Typography>
+              <Typography variant="body2" paragraph>
+                Utilizando iconos oficiales Release 2025.07.31.
+              </Typography>
+              <Button
+                variant="outlined"
+                color="primary"
+                startIcon={<LaunchIcon />}
+                href="https://aws.amazon.com/architecture/icons/"
+                target="_blank"
+                rel="noopener noreferrer"
+                fullWidth
+              >
+                AWS Architecture Icons
+              </Button>
+            </Box>
+
+            {/* Columna 2: FossFlow GitHub */}
+            <Box sx={{ flex: 1, p: 2, border: '1px solid #3c4b64', borderRadius: 2, bgcolor: 'background.paper' }}>
+              <Typography variant="h6" gutterBottom color="primary.main">
+                GitHub de FossFLOW
+              </Typography>
+              <Typography variant="body2" paragraph>
+                Github utilizado como base
+              </Typography>
+              <Button
+                variant="outlined"
+                color="primary"
+                startIcon={<LaunchIcon />}
+                href="https://github.com/stan-smith/FossFLOW"
+                target="_blank"
+                rel="noopener noreferrer"
+                fullWidth
+              >
+                Github
+              </Button>
+            </Box>
+
+            {/* Columna 3: Buy Me A Coffee */}
+            <Box sx={{ flex: 1, p: 2, border: '1px solid #3c4b64', borderRadius: 2, bgcolor: 'background.paper' }}>
+              <Typography variant="h6" gutterBottom color="primary.main">
+                Buy Me A Coffee
+              </Typography>
+              <Typography variant="body2" paragraph sx={{ color: 'transparent', userSelect: 'none' }}>
+                .
+              </Typography>
+              <Button
+                variant="outlined"
+                color="primary"
+                startIcon={<LaunchIcon />}
+                href="https://buymeacoffee.com/dibanezb"
+                target="_blank"
+                rel="noopener noreferrer"
+                fullWidth
+              >
+                Buy Me A Coffee
+              </Button>
+            </Box>
+          </Stack>
         </Box>
 
         <Box sx={{ mt: 3, p: 2, bgcolor: 'info.light', borderRadius: 1 }}>

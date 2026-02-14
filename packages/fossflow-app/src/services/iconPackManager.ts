@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback } from 'react';
-import { flattenCollections } from '@isoflow/isopacks/dist/utils';
 
 // Available icon packs (restricted to aws only)
 export type IconPackName = 'aws';
@@ -47,12 +46,43 @@ export const saveEnabledPacks = (packs: IconPackName[]): void => {
   // No-op, we force AWS
 };
 
+// Helper to organize icons by category while maintaining flat structure for Isoflow
+const organizeIconsByCategory = (pack: any): any => {
+  if (!pack || !pack.icons) return pack;
+  
+  // Group icons by collection (category)
+  const categorizedIcons: Record<string, any[]> = {};
+  
+  pack.icons.forEach((icon: any) => {
+    const category = icon.collection || 'General';
+    if (!categorizedIcons[category]) {
+      categorizedIcons[category] = [];
+    }
+    categorizedIcons[category].push(icon);
+  });
+  
+  // Create a collection structure that Isoflow can understand
+  // Each category becomes a separate collection
+  const collections = Object.entries(categorizedIcons).map(([categoryName, icons]) => ({
+    name: categoryName,
+    title: categoryName,
+    icons: icons
+  }));
+  
+  return {
+    ...pack,
+    collections: collections,
+    icons: pack.icons // Keep flat icons array for compatibility
+  };
+};
+
 // Dynamic pack loader
 export const loadIconPack = async (packName: IconPackName): Promise<any> => {
   console.log(`Attempting to load icon pack: ${packName}`);
   switch (packName) {
     case 'aws':
-      return (await import('../generatedAwsIcons')).generatedAwsIcons;
+      const awsPack = (await import('../generatedAwsIcons')).generatedAwsIcons;
+      return organizeIconsByCategory(awsPack);
     default:
       throw new Error(`Unknown icon pack: ${packName}`);
   }
@@ -102,7 +132,8 @@ export const useIconPackManager = (coreIcons: any[]) => {
 
     try {
       const pack = await loadIconPack(packName);
-      const flattenedIcons = flattenCollections([pack]);
+      // Use the icons directly from the pack (already organized by category)
+      const packIcons = pack.icons || [];
 
       // Store the loaded pack data
       setLoadedPackData(prev => ({
@@ -117,15 +148,19 @@ export const useIconPackManager = (coreIcons: any[]) => {
           ...prev[packName],
           loaded: true,
           loading: false,
-          iconCount: flattenedIcons.length,
+          iconCount: packIcons.length,
           error: null
         }
       }));
 
-      // Add icons to the loaded icons array
-      setLoadedIcons(prev => [...prev, ...flattenedIcons]);
+      // Add icons to the loaded icons array (avoid duplicates)
+      setLoadedIcons(prev => {
+        const existingIds = new Set(prev.map(icon => icon.id));
+        const newIcons = packIcons.filter((icon: any) => !existingIds.has(icon.id));
+        return [...prev, ...newIcons];
+      });
 
-      return flattenedIcons;
+      return packIcons;
     } catch (error) {
       console.error(`Failed to load ${packName} icon pack:`, error);
       setPackInfo(prev => ({
@@ -161,7 +196,8 @@ export const useIconPackManager = (coreIcons: any[]) => {
       const newIcons = [coreIcons];
       for (const pack of newEnabledPacks) {
         if (loadedPackData[pack]) {
-          newIcons.push(flattenCollections([loadedPackData[pack]]));
+          const packIcons = loadedPackData[pack].icons || [];
+          newIcons.push(packIcons);
         }
       }
       setLoadedIcons(newIcons.flat());

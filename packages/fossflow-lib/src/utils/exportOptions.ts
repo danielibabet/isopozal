@@ -4,7 +4,7 @@ import { Model, Size } from '../types';
 import { icons as availableIcons } from '../examples/initialData';
 
 export const generateGenericFilename = (extension: string) => {
-  return `fossflow-export-${new Date().toISOString()}.${extension}`;
+  return `isopozal-export-${new Date().toISOString()}.${extension}`;
 };
 
 export const base64ToBlob = (

@@ -263,7 +263,7 @@ export const DiagramManager: React.FC<Props> = ({
                         }}
                         disabled={loading}
                       >
-                        Delete
+                        Eliminar
                       </button>
                     </div>
                   </div>

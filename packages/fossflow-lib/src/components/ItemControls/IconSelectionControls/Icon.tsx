@@ -34,7 +34,10 @@ export const Icon = ({ icon, onClick, onMouseDown, onDoubleClick }: Props) => {
             draggable={false}
             src={icon.url}
             alt={`Icon ${icon.name}`}
-            sx={{ width: SIZE, height: SIZE }}
+            sx={{ 
+              width: SIZE, 
+              height: SIZE
+            }}
           />
           {icon.isIsometric === false && (
             <Box

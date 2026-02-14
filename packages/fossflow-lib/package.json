@@ -1,12 +1,12 @@
 {
   "name": "fossflow",
-  "version": "1.10.4",
+  "version": "1.0.1",
   "private": false,
   "description": "An open-source React component for drawing network diagrams - forked from isoflow.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stan-smith/FossFLOW.git"
+    "url": "https://github.com/danielibabet/isopozal.git"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

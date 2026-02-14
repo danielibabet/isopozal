@@ -12,16 +12,10 @@ export const useIconFiltering = () => {
   const filteredIcons = useMemo(() => {
     if (filter === '') return null;
 
-    // Escape special regex characters to treat filter as literal string
-    const escapedFilter = filter.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const regex = new RegExp(escapedFilter, 'gi');
-
+    const searchLower = filter.toLowerCase().trim();
+    
     return icons.filter((icon: Icon) => {
-      if (!filter) {
-        return true;
-      }
-
-      return regex.test(icon.name);
+      return icon.name.toLowerCase().includes(searchLower);
     });
   }, [icons, filter]);
 

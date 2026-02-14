@@ -19,7 +19,7 @@ interface Props {
 
 export const Node = memo(({ node, order }: Props) => {
   const modelItem = useModelItem(node.id);
-  const { iconComponent } = useIcon(modelItem?.icon);
+  const { iconComponent, icon } = useIcon(modelItem?.icon);
 
   const position = useMemo(() => {
     return getTilePosition({
@@ -38,6 +38,16 @@ export const Node = memo(({ node, order }: Props) => {
 
     return modelItem.description;
   }, [modelItem?.description]);
+
+  // Generate icon display name: "Category - Icon Name"
+  const iconDisplayName = useMemo(() => {
+    if (!icon?.id) return null;
+    
+    const category = icon.collection?.replace(/-/g, ' ') || 'General';
+    const iconName = icon.id.replace(/-/g, ' ');
+    
+    return `${category} - ${iconName}`;
+  }, [icon]);
 
   // If modelItem doesn't exist, don't render the node
   if (!modelItem) {
@@ -58,7 +68,7 @@ export const Node = memo(({ node, order }: Props) => {
           top: position.y
         }}
       >
-        {(modelItem?.name || description) && (
+        {(iconDisplayName || modelItem?.name || description) && (
           <Box
             sx={{ position: 'absolute' }}
             style={{ bottom: PROJECTED_TILE_SIZE.height / 2 }}
@@ -69,12 +79,19 @@ export const Node = memo(({ node, order }: Props) => {
               labelHeight={node.labelHeight ?? DEFAULT_LABEL_HEIGHT}
             >
               <Stack spacing={1}>
-                {modelItem.name && (
-                  <Typography fontWeight={600}>{modelItem.name}</Typography>
+                {iconDisplayName && (
+                  <Typography variant="caption" sx={{ color: 'black', fontWeight: 600 }}>
+                    {iconDisplayName}
+                  </Typography>
+                )}
+                {modelItem.name && modelItem.name !== 'Untitled' && modelItem.name !== 'Sin título' && modelItem.name.trim() !== '' && (
+                  <Typography fontWeight={600} sx={{ color: 'black' }}>{modelItem.name}</Typography>
                 )}
                 {modelItem.description &&
                   modelItem.description !== MARKDOWN_EMPTY_VALUE && (
-                    <RichTextEditor value={modelItem.description} readOnly />
+                    <Box sx={{ color: 'black' }}>
+                      <RichTextEditor value={modelItem.description} readOnly />
+                    </Box>
                   )}
               </Stack>
             </ExpandableLabel>
@@ -83,8 +100,7 @@ export const Node = memo(({ node, order }: Props) => {
         {iconComponent && (
           <Box
             sx={{
-              position: 'absolute',
-              pointerEvents: 'none'
+              position: 'absolute'
             }}
           >
             {iconComponent}

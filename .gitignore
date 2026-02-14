@@ -1,23 +1,60 @@
+# Dependencies
 node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
 dist/
 build/
+*.tsbuildinfo
+
+# Testing
+coverage/
+*.snap
+
+# Logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Environment variables
 .env
 .env.local
-.DS_Store
-coverage/
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories and files
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+.DS_Store
+
+# Cache
 .npm
 .eslintcache
-*.tsbuildinfo
-/e2e-tests/target
-*.snap
-parts/
-prime/
-stage/
-overlay/
+.cache/
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Claude AI
 .claude
+
+# Package manager
+.yarn/
+.pnpm-debug.log*
+
+# Build artifacts
+*.tgz

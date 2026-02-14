@@ -145,7 +145,7 @@ export const ConnectorControls = ({ id }: Props) => {
         >
           <CloseIcon />
         </MUIIconButton>
-        <Section title="Labels">
+        <Section title="Etiquetas">
           <Box sx={{ mb: 2 }}>
             <Box
               sx={{
@@ -156,7 +156,7 @@ export const ConnectorControls = ({ id }: Props) => {
               }}
             >
               <Typography variant="body2" color="text.secondary">
-                {labels.length} / 256 labels
+                {labels.length} / 256 etiquetas
               </Typography>
               <Button
                 startIcon={<AddIcon />}
@@ -165,7 +165,7 @@ export const ConnectorControls = ({ id }: Props) => {
                 size="small"
                 variant="outlined"
               >
-                Add Label
+                Añadir Etiqueta
               </Button>
             </Box>
 
@@ -175,7 +175,7 @@ export const ConnectorControls = ({ id }: Props) => {
                 color="text.secondary"
                 sx={{ textAlign: 'center', py: 2 }}
               >
-                No labels. Click &quot;Add Label&quot; to create one.
+                Sin etiquetas. Haz clic en &quot;Añadir Etiqueta&quot; para crear una.
               </Typography>
             )}
 
@@ -191,7 +191,7 @@ export const ConnectorControls = ({ id }: Props) => {
                     }}
                   >
                     <Typography variant="caption" color="text.secondary">
-                      Label {index + 1}
+                      Etiqueta {index + 1}
                     </Typography>
                     <MUIIconButton
                       size="small"
@@ -205,7 +205,7 @@ export const ConnectorControls = ({ id }: Props) => {
                   </Box>
 
                   <TextField
-                    label="Text"
+                    label="Texto"
                     value={label.text}
                     onChange={(e) => {
                       return handleUpdateLabel(label.id, {
@@ -218,7 +218,7 @@ export const ConnectorControls = ({ id }: Props) => {
 
                   <Box sx={{ display: 'flex', gap: 2, mb: 2 }}>
                     <TextField
-                      label="Position (%)"
+                      label="Posición (%)"
                       type="number"
                       value={label.position}
                       onChange={(e) => {
@@ -257,15 +257,15 @@ export const ConnectorControls = ({ id }: Props) => {
                         }}
                         sx={{ flex: 1 }}
                       >
-                        <MenuItem value="1">Line 1</MenuItem>
-                        <MenuItem value="2">Line 2</MenuItem>
+                        <MenuItem value="1">Línea 1</MenuItem>
+                        <MenuItem value="2">Línea 2</MenuItem>
                       </Select>
                     )}
                   </Box>
 
                   <Box>
                     <Typography variant="caption" color="text.secondary">
-                      Height Offset
+                      Desplazamiento Vertical
                     </Typography>
                     <Slider
                       marks
@@ -293,7 +293,7 @@ export const ConnectorControls = ({ id }: Props) => {
                           }}
                         />
                       }
-                      label="Show Dotted Line"
+                      label="Mostrar Línea Punteada"
                     />
                   </Box>
                 </Paper>
@@ -314,7 +314,7 @@ export const ConnectorControls = ({ id }: Props) => {
                 }}
               />
             }
-            label="Use Custom Color"
+            label="Personalizar Color"
             sx={{ mb: 2 }}
           />
           {useCustomColor ? (
@@ -336,7 +336,7 @@ export const ConnectorControls = ({ id }: Props) => {
             />
           )}
         </Section>
-        <Section title="Width">
+        <Section title="Ancho">
           <Slider
             marks
             step={10}
@@ -348,7 +348,7 @@ export const ConnectorControls = ({ id }: Props) => {
             }}
           />
         </Section>
-        <Section title="Line Style">
+        <Section title="Estilo de Línea">
           <Select
             value={connector.style || 'SOLID'}
             onChange={(e) => {
@@ -360,15 +360,20 @@ export const ConnectorControls = ({ id }: Props) => {
             sx={{ mb: 2 }}
           >
             {Object.values(connectorStyleOptions).map((style) => {
+              const styleNames: Record<string, string> = {
+                'SOLID': 'Sólida',
+                'DASHED': 'Discontinua',
+                'DOTTED': 'Punteada'
+              };
               return (
                 <MenuItem key={style} value={style}>
-                  {style}
+                  {styleNames[style] || style}
                 </MenuItem>
               );
             })}
           </Select>
         </Section>
-        <Section title="Line Type">
+        <Section title="Tipo de Línea">
           <Select
             value={connector.lineType || 'SINGLE'}
             onChange={(e) => {
@@ -379,15 +384,14 @@ export const ConnectorControls = ({ id }: Props) => {
             fullWidth
           >
             {Object.values(connectorLineTypeOptions).map((type) => {
-              let displayName = 'Double Line with Circle';
-              if (type === 'SINGLE') {
-                displayName = 'Single Line';
-              } else if (type === 'DOUBLE') {
-                displayName = 'Double Line';
-              }
+              const typeNames: Record<string, string> = {
+                'SINGLE': 'Línea Simple',
+                'DOUBLE': 'Línea Doble',
+                'DOUBLE_WITH_CIRCLE': 'Línea Doble con Círculo'
+              };
               return (
                 <MenuItem key={type} value={type}>
-                  {displayName}
+                  {typeNames[type] || type}
                 </MenuItem>
               );
             })}
@@ -405,7 +409,7 @@ export const ConnectorControls = ({ id }: Props) => {
                 }}
               />
             }
-            label="Show Arrow"
+            label="Mostrar Flecha"
           />
         </Section>
         <Section>
