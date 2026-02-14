@@ -250,7 +250,7 @@ Los iconos de AWS son propiedad de Amazon Web Services y se utilizan bajo sus t�
 
 ### Apoya el Proyecto Original
 
-Si te ha gustado IsoPozal, considera apoyar también a los creadores originales:
+Si te ha gustado IsoPozal considera apoyar también a los creadores originales:
 
 - **FossFLOW**: [Buy Me a Coffee](https://www.buymeacoffee.com/stan.smith) | [Ko-fi](https://ko-fi.com/P5P61KBXA3)
 
