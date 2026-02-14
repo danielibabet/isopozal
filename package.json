@@ -1,6 +1,6 @@
 {
   "name": "isopozal-monorepo",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "private": true,
   "description": "IsoPozal - Herramienta de diagramas de arquitectura AWS en español",
   "author": "Daniel Ibáñez <danielibabet@gmail.com>",

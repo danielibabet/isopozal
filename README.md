@@ -15,7 +15,7 @@
   <a href="https://github.com/danielibabet/isopozal/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/>
   </a>
-  <img src="https://img.shields.io/badge/version-1.0.1-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version"/>
 </p>
 
 ---
@@ -217,7 +217,7 @@ isopozal/
 ### Modificado
 
 - **Nombre del proyecto**: FossFLOW → IsoPozal
-- **Versión**: 1.0.1
+- **Versión**: 1.0.0
 - **Repositorio**: https://github.com/danielibabet/isopozal
 - **Idioma por defecto**: Español (era inglés)
 - **Nombre de exportación**: isopozal-export (era fossflow-export)
@@ -232,7 +232,7 @@ isopozal/
 
 ## Estado del Proyecto
 
-IsoPozal está en desarrollo activo. La versión actual (1.0.1) incluye todas las funcionalidades básicas para crear diagramas de arquitectura AWS profesionales.
+IsoPozal está en desarrollo activo. La versión actual (1.0.0) incluye todas las funcionalidades básicas para crear diagramas de arquitectura AWS profesionales.
 
 ### Próximas Funcionalidades
 
