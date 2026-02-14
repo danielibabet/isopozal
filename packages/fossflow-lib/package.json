@@ -2,7 +2,7 @@
   "name": "fossflow",
   "version": "1.0.0",
   "private": false,
-  "description": "An open-source React component for drawing network diagrams - forked from isoflow.",
+  "description": "Librería React para crear diagramas isométricos - fork de isoflow",
   "license": "MIT",
   "repository": {
     "type": "git",

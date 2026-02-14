@@ -2,7 +2,7 @@
   "name": "isopozal-app",
   "version": "1.0.0",
   "private": true,
-  "description": "Progressive Web App for creating isometric diagrams",
+  "description": "Aplicación web para crear diagramas de arquitectura AWS",
   "dependencies": {
     "@isoflow/isopacks": "^0.0.10",
     "fossflow": "*",

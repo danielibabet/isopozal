@@ -1,7 +1,7 @@
 {
-  "short_name": "FossFLOW",
-  "name": "FossFLOW - Isometric Diagramming Tool",
-  "description": "Create beautiful isometric diagrams with FossFLOW",
+  "short_name": "IsoPozal",
+  "name": "IsoPozal - Diagramas AWS",
+  "description": "Crea diagramas de arquitectura AWS de forma rápida y profesional",
   "icons": [
     {
       "src": "favicon.ico",
@@ -24,8 +24,8 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#2563eb",
-  "background_color": "#ffffff",
-  "orientation": "portrait-primary",
-  "scope": "/",
+  "background_color": "#1a1a1a",
+  "orientation": "any",
+  "scope": "./",
   "categories": ["productivity", "utilities", "graphics"]
 }
