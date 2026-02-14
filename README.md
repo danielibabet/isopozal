@@ -1,4 +1,4 @@
-# IsoPozal - Diagramador de Arquitectura AWS 🇪🇸
+# IsoPozal - Diagramador de Arquitectura AWS
 
 <p align="center">
   <img src="banner.png" alt="IsoPozal Banner" width="100%"/>
@@ -15,17 +15,12 @@
   <a href="https://github.com/danielibabet/isopozal/blob/main/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/>
   </a>
-</p>
-
-<p align="center">
-  <a href="https://buymeacoffee.com/dibanezb" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
-  </a>
+  <img src="https://img.shields.io/badge/version-1.0.1-blue.svg" alt="Version"/>
 </p>
 
 ---
 
-## 📸 Capturas de Pantalla
+## Capturas de Pantalla
 
 <p align="center">
   <img src="isopozal-screenshot.png" alt="IsoPozal Screenshot" width="100%"/>
@@ -33,34 +28,28 @@
   <em>Interfaz principal de IsoPozal</em>
 </p>
 
-<p align="center">
-  <img src="isopozal-demo.png" alt="IsoPozal Demo" width="100%"/>
-  <br/>
-  <em>Ejemplo de diagrama de arquitectura AWS</em>
-</p>
-
-## 🎯 ¿Qué es IsoPozal?
+## ¿Qué es IsoPozal?
 
 IsoPozal es una herramienta especializada para crear diagramas de arquitectura AWS de manera rápida, intuitiva y profesional. Basada en el excelente proyecto open source [FossFLOW](https://github.com/stan-smith/FossFLOW), IsoPozal está completamente adaptada para la comunidad hispanohablante con recursos oficiales de AWS.
 
-### ✨ Características Principales
+La aplicación funciona completamente en el navegador, sin necesidad de servidores backend, garantizando privacidad total y funcionamiento offline una vez cargada.
 
-- **🎨 Iconos Oficiales AWS**: Set completo de iconos de arquitectura y recursos de AWS (Versión 2025.07.31)
-- **🇪🇸 100% en Español**: Interfaz completamente traducida al español
-- **📁 Categorías Organizadas**: Servicios organizados en categorías traducidas (Cómputo, Base de Datos, Redes, Analítica, etc.)
-- **🌙 Tema Oscuro**: Interfaz profesional con paleta de colores oscuros optimizada
-- **🔒 Privacidad Total**: Todo el procesamiento se realiza en el navegador. Sin servidores, sin tracking
-- **💾 Múltiples Formatos**: Exporta tus diagramas como JSON, PNG, SVG o PDF
-- **⚡ Rápido e Intuitivo**: Dibuja diagramas isométricos profesionales en minutos
-- **📱 Progressive Web App**: Funciona offline una vez cargada
+### Características Principales
 
-## 🚀 Inicio Rápido
+- **Iconos Oficiales AWS**: Set completo de 307 iconos de servicios AWS organizados en 24 categorías
+- **100% en Español**: Interfaz completamente traducida al español con i18n
+- **Categorías Organizadas**: Servicios organizados en categorías traducidas (Cómputo, Base de Datos, Redes, Analítica, etc.)
+- **Búsqueda Inteligente**: Búsqueda en tiempo real de servicios AWS con filtrado por categoría
+- **Tema Oscuro**: Interfaz profesional con paleta de colores oscuros optimizada
+- **Privacidad Total**: Todo el procesamiento se realiza en el navegador. Sin servidores, sin tracking
+- **Múltiples Formatos**: Exporta tus diagramas como JSON, PNG, SVG o PDF
+- **Rápido e Intuitivo**: Dibuja diagramas isométricos profesionales en minutos
+- **Progressive Web App**: Funciona offline una vez cargada (Service Worker incluido)
+- **Glosario Integrado**: Descripciones en español de todos los servicios AWS
 
-### Opción 1: Usar Online (Recomendado)
+## Inicio Rápido
 
-Visita **[tu-url-de-deployment]** y empieza a crear diagramas inmediatamente.
-
-### Opción 2: Instalación Local
+### Instalación Local
 
 ```bash
 # Clonar el repositorio
@@ -77,9 +66,14 @@ npm run build:lib
 npm run dev
 ```
 
-Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
+La aplicación se abrirá automáticamente en tu navegador en [http://localhost:3000](http://localhost:3000).
 
-## 📖 Cómo Usar
+### Requisitos del Sistema
+
+- Node.js >= 18.0.0
+- npm >= 9.0.0
+
+## Cómo Usar
 
 ### Crear Diagramas
 
@@ -116,73 +110,133 @@ Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 | `Espacio + Arrastrar` | Mover canvas |
 | `Ctrl + Rueda` | Zoom |
 
-## 🎨 Recursos Incluidos
+## Recursos Incluidos
 
-- **307 Iconos de Servicios AWS** organizados en 24 categorías
-- **Iconos de Arquitectura**: VPC, Subnets, Regiones, Zonas de Disponibilidad
-- **Iconos de Recursos**: Instancias, Contenedores, Funciones Lambda, etc.
-- **Glosario de Servicios**: Consulta [GLOSARIO_AWS.md](GLOSARIO_AWS.md) para descripciones de cada servicio
+- **307 Iconos de Servicios AWS** organizados en 24 categorías:
+  - Analytics, App Integration, Blockchain, Business Applications
+  - Cloud Financial Management, Compute, Containers, Customer Enablement
+  - Database, Developer Tools, End User Computing, Front-End Web & Mobile
+  - Games, General Icons, Internet of Things, Machine Learning
+  - Management & Governance, Media Services, Migration & Transfer
+  - Networking & Content Delivery, Quantum Technologies, Robotics
+  - Satellite, Security Identity & Compliance, Storage, VR & AR
+- **Glosario de Servicios**: Consulta [GLOSARIO_AWS.md](GLOSARIO_AWS.md) para descripciones en español de cada servicio
 
-## 🔧 Estructura del Proyecto
+## Estructura del Proyecto
 
 Este es un monorepo que contiene dos paquetes:
 
-- `packages/fossflow-lib` - Librería React para dibujar diagramas (construida con Webpack)
+- `packages/fossflow-lib` - Librería React para dibujar diagramas (construida con RSLib)
 - `packages/fossflow-app` - Progressive Web App que envuelve la librería (construida con RSBuild)
+
+### Tecnologías Utilizadas
+
+- **React 19** - Framework de UI
+- **TypeScript 5.9** - Tipado estático
+- **RSBuild** - Build tool para la aplicación
+- **RSLib** - Build tool para la librería
+- **Material-UI (MUI)** - Componentes de UI
+- **Paper.js** - Renderizado de gráficos vectoriales
+- **i18next** - Internacionalización
+- **Zustand** - Gestión de estado
+- **GSAP** - Animaciones
 
 ### Comandos de Desarrollo
 
 ```bash
 # Desarrollo
-npm run dev          # Iniciar servidor de desarrollo
+npm run dev          # Iniciar servidor de desarrollo (puerto 3000)
 npm run dev:lib      # Modo watch para desarrollo de librería
 
 # Construcción
-npm run build        # Construir librería y app
+npm run build        # Construir librería y app para producción
 npm run build:lib    # Construir solo librería
 npm run build:app    # Construir solo app
 
 # Testing y Linting
 npm test             # Ejecutar tests unitarios
 npm run lint         # Verificar errores de linting
+
+# Limpieza
+npm run clean        # Limpiar archivos de build
 ```
 
-## 🆕 Cambios Respecto a FossFLOW Original
+### Estructura de Carpetas
 
-### ✅ Añadido
+```
+isopozal/
+├── packages/
+│   ├── fossflow-lib/          # Librería React
+│   │   ├── src/
+│   │   │   ├── components/    # Componentes React
+│   │   │   ├── models/        # Modelos de datos
+│   │   │   ├── services/      # Servicios y utilidades
+│   │   │   └── index.ts       # Punto de entrada
+│   │   └── package.json
+│   └── fossflow-app/          # Progressive Web App
+│       ├── public/
+│       │   ├── i18n/          # Traducciones
+│       │   └── pngs/          # Iconos AWS
+│       ├── src/
+│       │   ├── components/    # Componentes de la app
+│       │   └── App.tsx        # Componente principal
+│       └── package.json
+├── GLOSARIO_AWS.md            # Glosario de servicios AWS
+├── CHANGELOG.md               # Historial de cambios
+└── package.json               # Configuración del monorepo
+```
 
-- **Traducción completa al español** de toda la interfaz
-- **Iconos oficiales de AWS** (307 servicios)
+## Cambios Respecto a FossFLOW Original
+
+### Añadido
+
+- **Traducción completa al español** de toda la interfaz usando i18next
+- **307 iconos oficiales de AWS** organizados en 24 categorías
 - **Categorías en español** para servicios AWS
-- **Glosario de servicios AWS** en español
+- **Glosario de servicios AWS** en español (GLOSARIO_AWS.md)
 - **Tema oscuro optimizado** para trabajo profesional
 - **Búsqueda mejorada** de iconos con filtrado en tiempo real
-- **Enlaces a recursos** (GitHub, Buy Me a Coffee)
+- **Service Worker** para funcionamiento offline
+- **Selector rápido de iconos** en controles de nodo
+- **Migración a RSBuild/RSLib** desde Webpack
 
-### ❌ Eliminado
+### Eliminado
 
 - Configuración de Docker (no necesaria para uso web)
 - Tests E2E (simplificación del proyecto)
 - Workflows de GitHub Actions originales
 - Carpetas de SVG no utilizadas
-- Documentación de contribución de FossFLOW
 - Sistema de "Iconos Usados Recientemente"
 - Funcionalidad de importar iconos personalizados
+- Backend de Node.js (no necesario)
 
-### 🔄 Modificado
+### Modificado
 
 - **Nombre del proyecto**: FossFLOW → IsoPozal
-- **Versión**: 1.0.0 (reinicio de versionado)
+- **Versión**: 1.0.1
 - **Repositorio**: https://github.com/danielibabet/isopozal
 - **Idioma por defecto**: Español (era inglés)
 - **Nombre de exportación**: isopozal-export (era fossflow-export)
+- **Build tools**: Webpack → RSBuild/RSLib
+- **React**: Actualizado a v19
 
-## 📚 Documentación Adicional
+## Documentación Adicional
 
 - [GLOSARIO_AWS.md](GLOSARIO_AWS.md) - Glosario de servicios AWS en español
-- [README-FossFlow.md](README-FossFlow.md) - README original de FossFLOW
+- [CHANGELOG.md](CHANGELOG.md) - Historial de cambios del proyecto
 
-## 🙏 Créditos
+## Estado del Proyecto
+
+IsoPozal está en desarrollo activo. La versión actual (1.0.1) incluye todas las funcionalidades básicas para crear diagramas de arquitectura AWS profesionales.
+
+### Próximas Funcionalidades
+
+- Exportación a formatos adicionales (Terraform, CloudFormation)
+- Plantillas predefinidas de arquitecturas comunes
+- Colaboración en tiempo real
+- Integración con AWS para importar arquitecturas existentes
+
+## Créditos
 
 IsoPozal está basado en [FossFLOW](https://github.com/stan-smith/FossFLOW) creado por [@stan-smith](https://github.com/stan-smith).
 
@@ -196,24 +250,27 @@ Si te ha gustado IsoPozal, considera apoyar también a los creadores originales:
 
 - **FossFLOW**: [Buy Me a Coffee](https://www.buymeacoffee.com/stan.smith) | [Ko-fi](https://ko-fi.com/P5P61KBXA3)
 
-## 💖 Apoya IsoPozal
+## Contribuciones
 
-Si IsoPozal te ha sido útil, considera invitarme a un café:
+Las contribuciones son bienvenidas. Si encuentras un bug o tienes una sugerencia:
 
-<a href="https://buymeacoffee.com/dibanezb" target="_blank">
-  <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
-</a>
+1. Abre un [issue](https://github.com/danielibabet/isopozal/issues)
+2. Haz un fork del proyecto
+3. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+4. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+5. Push a la rama (`git push origin feature/AmazingFeature`)
+6. Abre un Pull Request
 
-## 📄 Licencia
+## Licencia
 
 MIT License - Ver [LICENSE](LICENSE) para más detalles.
 
 ---
 
 <p align="center">
-  Hecho con ❤️ para la comunidad hispanohablante de AWS
+  Hecho con amor para la comunidad hispanohablante de AWS
 </p>
 
 <p align="center">
-  <a href="https://github.com/danielibabet/isopozal">⭐ Dale una estrella en GitHub</a>
+  <a href="https://github.com/danielibabet/isopozal">Dale una estrella en GitHub</a>
 </p>
