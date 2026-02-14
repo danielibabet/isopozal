@@ -49,6 +49,10 @@ La aplicación funciona completamente en el navegador, sin necesidad de servidor
 
 ## Inicio Rápido
 
+### Usar Online
+
+Visita **[https://danielibabet.github.io/isopozal](https://danielibabet.github.io/isopozal)** y empieza a crear diagramas inmediatamente.
+
 ### Instalación Local
 
 ```bash
@@ -224,6 +228,7 @@ isopozal/
 
 - [GLOSARIO_AWS.md](GLOSARIO_AWS.md) - Glosario de servicios AWS en español
 - [CHANGELOG.md](CHANGELOG.md) - Historial de cambios del proyecto
+- [DEPLOYMENT.md](DEPLOYMENT.md) - Guía de deployment a GitHub Pages
 
 ## Estado del Proyecto
 

@@ -32,7 +32,7 @@ export default defineConfig({
     },
     output: {
         distPath: {
-            root: 'build',
+            root: 'dist',
         },
         // https://rsbuild.rs/guide/advanced/browser-compatibility
         polyfill: 'usage',
@@ -41,6 +41,10 @@ export default defineConfig({
             {
                 from: './src/i18n',
                 to: 'i18n/app',
+            },
+            {
+                from: './public/.nojekyll',
+                to: '.nojekyll',
             },
         ]
     }

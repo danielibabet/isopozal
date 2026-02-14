@@ -19,8 +19,9 @@
   "scripts": {
     "start": "rsbuild dev",
     "build": "rsbuild build",
+    "build:gh-pages": "cross-env PUBLIC_URL=/isopozal rsbuild build",
     "preview": "rsbuild preview",
-    "clean": "rm -rf build"
+    "clean": "rm -rf dist"
   },
   "eslintConfig": {
     "extends": [
