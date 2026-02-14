@@ -50,6 +50,10 @@ export default defineConfig({
                 from: './public/pngs',
                 to: 'pngs',
             },
+            {
+                from: './public/block.png',
+                to: 'block.png',
+            },
         ]
     }
 });

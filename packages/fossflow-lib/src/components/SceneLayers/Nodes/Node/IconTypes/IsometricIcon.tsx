@@ -13,6 +13,18 @@ export const IsometricIcon = ({ url, scale = 1, onImageLoaded }: Props) => {
   const ref = useRef<HTMLImageElement>(null);
   const { size, observe, disconnect } = useResizeObserver();
 
+  // Get base path from window location for GitHub Pages support
+  const getBasePath = () => {
+    const pathname = window.location.pathname;
+    // If pathname starts with /isopozal, use that as base
+    if (pathname.startsWith('/isopozal')) {
+      return '/isopozal';
+    }
+    return '';
+  };
+
+  const blockUrl = `${getBasePath()}/block.png`;
+
   useEffect(() => {
     if (!ref.current) return;
 
@@ -26,7 +38,7 @@ export const IsometricIcon = ({ url, scale = 1, onImageLoaded }: Props) => {
       {/* Block layer - background - VISUAL ONLY, NOT CLICKEABLE */}
       <Box
         component="img"
-        src="/block.png"
+        src={blockUrl}
         sx={{
           position: 'absolute',
           width: PROJECTED_TILE_SIZE.width * scale,
