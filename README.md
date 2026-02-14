@@ -228,17 +228,16 @@ isopozal/
 
 - [GLOSARIO_AWS.md](GLOSARIO_AWS.md) - Glosario de servicios AWS en español
 - [CHANGELOG.md](CHANGELOG.md) - Historial de cambios del proyecto
-- [DEPLOYMENT.md](DEPLOYMENT.md) - Guía de deployment a GitHub Pages
 
 ## Estado del Proyecto
 
-IsoPozal está en desarrollo activo. La versión actual (1.0.0) incluye todas las funcionalidades básicas para crear diagramas de arquitectura AWS profesionales.
+IsoPozal v1.0.0 es la primera versión estable, lista para uso en producción. Incluye todas las funcionalidades esenciales para crear diagramas de arquitectura AWS profesionales.
 
-### Próximas Funcionalidades
+### Roadmap Futuro
 
-- Exportación a formatos adicionales (Terraform, CloudFormation)
+- Exportación a IaC (Terraform, CloudFormation)
 - Plantillas predefinidas de arquitecturas comunes
-- Colaboración en tiempo real
+- Más idiomas (inglés, portugués)
 - Integración con AWS para importar arquitecturas existentes
 
 ## Créditos
