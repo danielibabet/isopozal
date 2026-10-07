@@ -9,6 +9,13 @@
   <img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
   <img src="https://img.shields.io/badge/RSBuild-F43F5E?style=for-the-badge&logo=rust&logoColor=white" alt="RSBuild"/>
   <img src="https://img.shields.io/badge/AWS_Icons-300+-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS Icons"/>
+  <img src="https://img.shields.io/badge/GitHub_Pages-Online-22c55e?style=for-the-badge&logo=github&logoColor=white" alt="Online App"/>
+</p>
+
+<p align="center">
+  <a href="https://danielibabet.github.io/isopozal/">
+    <img src="https://img.shields.io/badge/🚀_Launch_App-danielibabet.github.io%2Fisopozal-2563eb?style=for-the-badge" alt="Launch IsoPozal Online"/>
+  </a>
 </p>
 
 <p align="center">
@@ -18,6 +25,8 @@
 </p>
 
 IsoPozal is a free and open-source web application to build isometric cloud architecture diagrams with official AWS icons, full Spanish localization, and instant diagram export.
+
+> 🌐 **Try it online now without installation:** [danielibabet.github.io/isopozal](https://danielibabet.github.io/isopozal/)
 
 ---
 
@@ -59,4 +68,3 @@ npm run build
 ## Support & Author
 
 - **Daniel Ibáñez** - [@danielibabet](https://github.com/danielibabet)
-- Support this project: [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-yellow.svg?style=flat&logo=buy-me-a-coffee)](https://buymeacoffee.com/dibanezb)
