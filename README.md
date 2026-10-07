@@ -1,4 +1,4 @@
-﻿# IsoPozal - AWS Architecture Isometric Diagrammer
+# IsoPozal - AWS Architecture Isometric Diagrammer
 
 <p align="center">
   <img src="banner.png" alt="IsoPozal Banner" width="100%"/>
@@ -21,7 +21,7 @@ IsoPozal is a free and open-source web application to build isometric cloud arch
 
 ---
 
-## 📸 Interface Preview
+## Interface Preview
 
 <p align="center">
   <img src="isopozal-screenshot.png" alt="IsoPozal Screenshot" width="100%"/>
@@ -31,19 +31,19 @@ IsoPozal is a free and open-source web application to build isometric cloud arch
 
 ---
 
-## ✨ Features
+## Features
 
-- 📐 **Isometric Canvas:** Professional isometric grid with smooth snapping, connecting arrows, and custom text labels.
-- ☁️ **300+ Official AWS Icons:** Fully categorized across Compute, Storage, Database, AI/ML, Networking, Security, and more.
-- ⚡ **Lightning Fast:** Powered by **RSBuild** and **RSlib** for ultra-fast compilation and runtime performance.
-- 🌐 **Offline PWA Support:** Service Worker caching for seamless offline architecture designing.
-- 💾 **Export Options:** Export clean vector-ready SVG/PNG diagrams directly from your browser.
+- **Isometric Canvas:** Professional isometric grid with smooth snapping, connecting arrows, and custom text labels.
+- **300+ Official AWS Icons:** Fully categorized across Compute, Storage, Database, AI/ML, Networking, Security, and more.
+- **Lightning Fast:** Powered by **RSBuild** and **RSlib** for ultra-fast compilation and runtime performance.
+- **Offline PWA Support:** Service Worker caching for seamless offline architecture designing.
+- **Export Options:** Export clean vector-ready SVG/PNG diagrams directly from your browser.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
-`ash
+```bash
 # Install dependencies
 npm install
 
@@ -52,11 +52,11 @@ npm run dev
 
 # Build for production
 npm run build
-`
+```
 
 ---
 
-## ☕ Support & Author
+## Support & Author
 
 - **Daniel Ibáñez** - [@danielibabet](https://github.com/danielibabet)
 - Support this project: [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Donate-yellow.svg?style=flat&logo=buy-me-a-coffee)](https://buymeacoffee.com/dibanezb)
